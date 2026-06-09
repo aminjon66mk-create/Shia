@@ -2014,88 +2014,6 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
   .wallet-copy { opacity: 1; }
 }
 
-
-/* ═══════════════════════════════════════
-   COLLAPSIBLE FILTERS PANEL
-═══════════════════════════════════════ */
-.search-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.search-row .search-wrap {
-  flex: 1;
-}
-
-.btn-collapse-filters {
-  flex-shrink: 0;
-  width: 34px;
-  height: 34px;
-  background: var(--ink-2);
-  border: 1px solid var(--border-bright);
-  border-radius: 8px;
-  color: var(--text-3);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .2s;
-}
-.btn-collapse-filters:hover {
-  background: var(--teal-glow);
-  border-color: var(--teal);
-  color: var(--teal);
-}
-.btn-collapse-filters[aria-expanded="true"] .collapse-icon {
-  transform: rotate(0deg);
-  transition: transform .25s ease;
-}
-.btn-collapse-filters[aria-expanded="false"] .collapse-icon {
-  transform: rotate(180deg);
-  transition: transform .25s ease;
-}
-
-/* Animated collapsible panel */
-.filters-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  overflow: hidden;
-  max-height: 500px;
-  opacity: 1;
-  transition: max-height .3s ease, opacity .25s ease, margin .25s ease;
-  margin-top: 0;
-}
-.filters-panel.collapsed {
-  max-height: 0;
-  opacity: 0;
-  margin-top: -6px;
-  pointer-events: none;
-}
-
-/* Compact stats bar when filters hidden */
-.stats-bar {
-  transition: background .2s;
-}
-.sidebar.filters-hidden .stats-bar {
-  background: var(--ink-2);
-  border-top: 1px solid var(--teal-glow);
-}
-
-/* Indicator dot on toggle button when filters are active */
-.btn-collapse-filters.has-active-filters::after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 6px;
-  height: 6px;
-  background: var(--teal);
-  border-radius: 50%;
-}
-.btn-collapse-filters {
-  position: relative;
-}
 </style>
 </head>
 <body>
@@ -2192,6 +2110,7 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
       <button class="lang-btn" data-lang="ar" title="العربية">عربي</button>
       <button class="lang-btn" data-lang="en" title="English">EN</button>
       <button class="lang-btn" data-lang="fa" title="فارسی">FA</button>
+      <button class="lang-btn" data-lang="az" title="Azərbaycan dili">AZ</button>
     </div>
   </div>
 </header>
@@ -2322,70 +2241,60 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
   <!-- Sidebar / Drawer -->
   <aside class="sidebar tab-active" id="sidebar">
     <div class="sidebar-top">
-      <!-- Search row with collapse toggle -->
-      <div class="search-row">
-        <div class="search-wrap">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-          <input type="search" class="search-input" id="searchInput" autocomplete="off" autocorrect="off" spellcheck="false">
-          <button class="search-clear" id="searchClear" aria-label="Очистить">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
-        </div>
-        <button class="btn-collapse-filters" id="btnCollapseFilters" title="Скрыть/показать фильтры" aria-expanded="true" aria-controls="filtersPanel">
-          <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <polyline points="18 15 12 9 6 15"/>
+      <!-- Search -->
+      <div class="search-wrap">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" class="search-input" id="searchInput" autocomplete="off" autocorrect="off" spellcheck="false">
+        <button class="search-clear" id="searchClear" aria-label="Очистить">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
           </svg>
         </button>
       </div>
 
-      <!-- Collapsible filters panel -->
-      <div class="filters-panel" id="filtersPanel">
-        <!-- Filters -->
-        <div class="filter-bar" id="filterBar">
-          <button class="filter-chip active" data-filter="all" id="filterAll">—</button>
-          <button class="filter-chip" data-filter="trust" id="filterTrust">—</button>
-          <button class="filter-chip" data-filter="disputed" id="filterDisputed">—</button>
-          <button class="filter-chip" data-filter="weak" id="filterWeak">—</button>
-        </div>
+      <!-- Filters -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-chip active" data-filter="all" id="filterAll">—</button>
+        <button class="filter-chip" data-filter="trust" id="filterTrust">—</button>
+        <button class="filter-chip" data-filter="disputed" id="filterDisputed">—</button>
+        <button class="filter-chip" data-filter="weak" id="filterWeak">—</button>
+      </div>
 
-        <!-- Epoch filter -->
-        <div class="filter-section-label" id="epochLabel">Эпоха</div>
-        <div class="epoch-bar" id="epochBar">
-          <button class="epoch-chip active" data-epoch="all">Все</button>
-          <button class="epoch-chip" data-epoch="sahaba">Сахабы</button>
-          <button class="epoch-chip" data-epoch="tabiin">Табиины</button>
-          <button class="epoch-chip" data-epoch="2">II в.х.</button>
-          <button class="epoch-chip" data-epoch="3">III в.х.</button>
-          <button class="epoch-chip" data-epoch="4">IV в.х.</button>
-          <button class="epoch-chip" data-epoch="5+">V+ в.х.</button>
-        </div>
+      <!-- Epoch filter -->
+      <div class="filter-section-label" id="epochLabel">Эпоха</div>
+      <div class="epoch-bar" id="epochBar">
+        <button class="epoch-chip active" data-epoch="all">Все</button>
+        <button class="epoch-chip" data-epoch="sahaba">Сахабы</button>
+        <button class="epoch-chip" data-epoch="tabiin">Табиины</button>
+        <button class="epoch-chip" data-epoch="2">II в.х.</button>
+        <button class="epoch-chip" data-epoch="3">III в.х.</button>
+        <button class="epoch-chip" data-epoch="4">IV в.х.</button>
+        <button class="epoch-chip" data-epoch="5+">V+ в.х.</button>
+      </div>
 
-        <!-- Sect filter -->
-        <div class="filter-section-label" id="sectLabel">Течение</div>
-        <div class="sect-bar" id="sectBar">
-          <button class="sect-chip active" data-sect="all">Все</button>
-          <button class="sect-chip" data-sect="imamit">Имамиты</button>
-          <button class="sect-chip" data-sect="nasibi">Насибиты</button>
-          <button class="sect-chip" data-sect="ghulat">Гулаты</button>
-          <button class="sect-chip" data-sect="wakifi">Вакифиты</button>
-          <button class="sect-chip" data-sect="zaydi">Зейдиты</button>
-        </div>
+      <!-- Sect filter -->
+      <div class="filter-section-label" id="sectLabel">Течение</div>
+      <div class="sect-bar" id="sectBar">
+        <button class="sect-chip active" data-sect="all">Все</button>
+        <button class="sect-chip" data-sect="imamit">Имамиты</button>
+        <button class="sect-chip" data-sect="nasibi">Насибиты</button>
+        <button class="sect-chip" data-sect="ghulat">Гулаты</button>
+        <button class="sect-chip" data-sect="wakifi">Вакифиты</button>
+        <button class="sect-chip" data-sect="zaydi">Зейдиты</button>
+      </div>
 
-        <!-- Quick actions -->
-        <div class="quick-actions">
-          <button class="btn-quick" id="btnShowFav">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            <span id="favLabel">—</span>
-          </button>
-          <button class="btn-quick" id="btnShowAll">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-            <span id="allLabel">—</span>
-          </button>
-        </div>
+      <!-- Quick actions -->
+      <div class="quick-actions">
+        <button class="btn-quick" id="btnShowFav">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span id="favLabel">—</span>
+        </button>
+        <button class="btn-quick" id="btnShowAll">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <span id="allLabel">—</span>
+        </button>
       </div>
     </div>
 
@@ -2506,7 +2415,7 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
 <div class="panel-overlay" id="statsPanel">
   <div class="panel-box">
     <div class="panel-head">
-      <div class="panel-title">📊 Статистика базы данных</div>
+      <div class="panel-title">📊 Verilənlər bazasının statistikası</div>
       <button class="panel-close" id="statsClose">✕</button>
     </div>
     <div class="donut-wrap">
@@ -2773,6 +2682,42 @@ const i18n = {
     trust: 'ثقه',
     weak: 'ضعیف',
     disputed: 'مختلف فیه',
+  },
+  az: {
+    appTitle: 'Elm ər-Rical',
+    appSubtitle: 'Hədis ravilərinin müqayisəli tənqidi təhlili',
+    searchPlaceholder: 'Ravi axtar...',
+    filterAll: 'Hamısı',
+    filterTrust: 'Etibarlı',
+    filterDisputed: 'Mübahisəli',
+    filterWeak: 'Zəif',
+    favLabel: 'Seçilmişlər',
+    allLabel: 'Bütün qeydlər',
+    backLabel: 'Geri',
+    tabListLabel: 'Siyahı',
+    tabDetailLabel: 'Kart',
+    statsOf: (n, t) => `<strong>${n}</strong> / ${t} ravi`,
+    welcomeTitle: 'Elm ər-Rical Analitik Verilənlər Bazası',
+    welcomeDesc: 'Şiə və Sünni ənənələrində hədis ravilərinin tənqidi təhlili. Tam təhlili görmək üçün siyahıdan ravi seçin.',
+    wsTotalLabel: 'RAVİLƏR',
+    wsTrustLabel: 'ETİBARLI',
+    wsFavLabel: 'SEÇİLMİŞ',
+    scShiaLabel: 'Şiə məktəbi (Cəfəri məzhəbi)',
+    scSunniLabel: 'Sünni məktəbi (Hədis elmləri)',
+    secBioLabel: 'Bioqrafik məlumat',
+    secAnalysisLabel: 'Qoşa standartların təhlili və polemika',
+    secSourcesLabel: 'Sənədləşdirilmiş mənbələr',
+    noSources: 'Sənədləşdirilmiş mənbə yoxdur',
+    noAnalysis: 'Təhlil verilməyib',
+    addedFav: '★ Seçilmişlərə əlavə edildi',
+    removedFav: '✦ Seçilmişlərdən silindi',
+    noFav: 'Seçilmiş ravi yoxdur',
+    notFound: 'Ravi rical bazasında tapılmadı',
+    detId: (n) => `Qeyd #${n + 1}`,
+    randomHint: 'Təsadüfi ravi',
+    trust: 'Etibarlı (Siqa)',
+    weak: 'Zəif (Daif)',
+    disputed: 'Mübahisəli',
   }
 };
 
@@ -2835,7 +2780,7 @@ function saveSettings() {
 function loadSettings() {
   try {
     const lang = localStorage.getItem('rijal_lang');
-    if (['ru','ar','en','fa'].includes(lang)) state.lang = lang;
+    if (['ru','ar','en','fa','az'].includes(lang)) state.lang = lang;
     const favs = JSON.parse(localStorage.getItem('rijal_favorites') || '[]');
     state.favorites = new Set(favs);
   } catch(e) {}
@@ -2865,7 +2810,8 @@ function applyLang() {
     ru: 'Ильм <span style="color:var(--teal)">ар-Риджаль</span>',
     ar: 'علم <span style="color:var(--teal)">الرجال</span>',
     en: 'Ilm <span style="color:var(--teal)">al-Rijal</span>',
-    fa: 'علم <span style="color:var(--teal)">الرجال</span>'
+    fa: 'علم <span style="color:var(--teal)">الرجال</span>',
+    az: 'Elm <span style="color:var(--teal)">ər-Rical</span>'
   };
   $('appTitle').innerHTML = titleMap[state.lang] || titleMap.ru;
   $('appSubtitle').textContent = t('appSubtitle');
@@ -2908,6 +2854,156 @@ function applyLang() {
   // Tab labels
   if ($('tabListLabel')) $('tabListLabel').textContent = t('tabListLabel');
   if ($('tabDetailLabel')) $('tabDetailLabel').textContent = t('tabDetailLabel');
+
+  // Action bar labels
+  const actionLabels = {
+    ru: { fav:'Избранное', rand:'Случайный', stats:'Статистика', cmp:'Сравнение',
+          tl:'Хронология', gloss:'Глоссарий', isnad:'Иснад', rel:'Рейтинг',
+          quiz:'Викторина', conf:'Конфликты', meth:'Методология', bar:'Инструменты анализа риджаля',
+          epoch:'Эпоха', sect:'Течение' },
+    ar:  { fav:'المفضلة', rand:'عشوائي', stats:'إحصاء', cmp:'مقارنة',
+          tl:'التسلسل', gloss:'المصطلحات', isnad:'الإسناد', rel:'التقييم',
+          quiz:'مسابقة', conf:'التناقضات', meth:'المنهج', bar:'أدوات تحليل الرجال',
+          epoch:'العصر', sect:'المذهب' },
+    en:  { fav:'Favorites', rand:'Random', stats:'Statistics', cmp:'Compare',
+          tl:'Timeline', gloss:'Glossary', isnad:'Isnad', rel:'Rating',
+          quiz:'Quiz', conf:'Conflicts', meth:'Methodology', bar:'Rijal Analysis Tools',
+          epoch:'Epoch', sect:'School' },
+    fa:  { fav:'علاقه‌مندی‌ها', rand:'تصادفی', stats:'آمار', cmp:'مقایسه',
+          tl:'تسلسل زمانی', gloss:'واژه‌نامه', isnad:'اسناد', rel:'رتبه‌بندی',
+          quiz:'آزمون', conf:'تناقضات', meth:'روش‌شناسی', bar:'ابزارهای تحلیل رجال',
+          epoch:'دوره', sect:'مکتب' },
+    az:  { fav:'Seçilmişlər', rand:'Təsadüfi', stats:'Statistika', cmp:'Müqayisə',
+          tl:'Xronologiya', gloss:'Lüğət', isnad:'İsnad', rel:'Reytinq',
+          quiz:'Viktorina', conf:'Ziddiyyətlər', meth:'Metodologiya', bar:'Rical Təhlil Alətləri',
+          epoch:'Dövr', sect:'Cərəyan' },
+  };
+  const al = actionLabels[state.lang] || actionLabels.ru;
+  // Action bar buttons
+  const btnFavView = $('btnFavView'); if(btnFavView) btnFavView.querySelector('.action-label').textContent = al.fav;
+  const btnRandom  = $('btnRandom');  if(btnRandom)  btnRandom.querySelector('.action-label').textContent  = al.rand;
+  const btnStats   = $('btnStats');   if(btnStats)   btnStats.querySelector('.action-label').textContent   = al.stats;
+  const btnCompare = $('btnCompare'); if(btnCompare) btnCompare.querySelector('.action-label').textContent = al.cmp;
+  const btnTimeline= $('btnTimeline');if(btnTimeline)btnTimeline.querySelector('.action-label').textContent= al.tl;
+  const btnGlossary= $('btnGlossary');if(btnGlossary)btnGlossary.querySelector('.action-label').textContent= al.gloss;
+  const btnIsnad   = $('btnIsnad');   if(btnIsnad)   btnIsnad.querySelector('.action-label').textContent   = al.isnad;
+  const btnRel     = $('btnReliability');if(btnRel)  btnRel.querySelector('.action-label').textContent    = al.rel;
+  const btnQuiz    = $('btnQuiz');    if(btnQuiz)    btnQuiz.querySelector('.action-label').textContent    = al.quiz;
+  const btnConflict= $('btnConflict');if(btnConflict)btnConflict.querySelector('.action-label').textContent= al.conf;
+  const btnHilali  = $('btnHilali');  if(btnHilali)  btnHilali.querySelector('.action-label').textContent  = al.meth;
+  // Action bar title
+  const abt = document.querySelector('.action-bar-title'); if(abt) abt.textContent = al.bar;
+  // Epoch/sect labels
+  const epochLbl = $('epochLabel'); if(epochLbl) epochLbl.textContent = al.epoch;
+  const sectLbl  = $('sectLabel');  if(sectLbl)  sectLbl.textContent  = al.sect;
+  // Epoch chips
+  const epochChips = { all:'Hamısı', sahaba:'Səhabə', tabiin:'Tabiin', '2':'II əsr h.', '3':'III əsr h.', '4':'IV əsr h.', '5+':'V+ əsr h.' };
+  const epochChipsRu = { all:'Все', sahaba:'Сахабы', tabiin:'Табиины', '2':'II в.х.', '3':'III в.х.', '4':'IV в.х.', '5+':'V+ в.х.' };
+  const epochChipsAr = { all:'الكل', sahaba:'الصحابة', tabiin:'التابعون', '2':'القرن الثاني', '3':'القرن الثالث', '4':'القرن الرابع', '5+':'القرن الخامس+' };
+  const epochChipsEn = { all:'All', sahaba:'Companions', tabiin:'Tabiun', '2':'II cent. AH', '3':'III cent. AH', '4':'IV cent. AH', '5+':'V+ cent. AH' };
+  const epochChipsFa = { all:'همه', sahaba:'صحابه', tabiin:'تابعین', '2':'قرن دوم', '3':'قرن سوم', '4':'قرن چهارم', '5+':'قرن پنجم+' };
+  const eMap = { ru: epochChipsRu, ar: epochChipsAr, en: epochChipsEn, fa: epochChipsFa, az: epochChips };
+  const eCur = eMap[state.lang] || epochChipsRu;
+  document.querySelectorAll('.epoch-chip').forEach(btn => {
+    const key = btn.dataset.epoch; if(eCur[key]) btn.textContent = eCur[key];
+  });
+  // Sect chips
+  const sectMap = {
+    ru: { all:'Все', imamit:'Имамиты', nasibi:'Насибиты', ghulat:'Гулаты', wakifi:'Вакифиты', zaydi:'Зейдиты' },
+    ar: { all:'الكل', imamit:'الإمامية', nasibi:'الناصبة', ghulat:'الغلاة', wakifi:'الواقفة', zaydi:'الزيدية' },
+    en: { all:'All', imamit:'Imamis', nasibi:'Nasibis', ghulat:'Ghulat', wakifi:'Waqifis', zaydi:'Zaydis' },
+    fa: { all:'همه', imamit:'امامیه', nasibi:'ناصبیه', ghulat:'غلات', wakifi:'واقفیه', zaydi:'زیدیه' },
+    az: { all:'Hamısı', imamit:'İmamilər', nasibi:'Nasibilər', ghulat:'Qulat', wakifi:'Vakifilər', zaydi:'Zeydilər' },
+  };
+  const sCur = sectMap[state.lang] || sectMap.ru;
+  document.querySelectorAll('.sect-chip').forEach(btn => {
+    const key = btn.dataset.sect; if(sCur[key]) btn.textContent = sCur[key];
+  });
+
+  // Panel & misc static texts
+  const panelTexts = {
+    ru: {
+      statsTitle: '📊 Статистика базы данных',
+      compareTitle: '⚖ Сравнение передатчиков',
+      timelineTitle: '🕐 Хронология передатчиков',
+      glossaryTitle: '📖 Глоссарий терминов ар-Риджаль',
+      isnadTitle: '⛓ Анализатор Иснада',
+      isnadDesc: 'Введите цепочку передатчиков через запятую — система оценит каждое звено и даст итоговое заключение.',
+      isnadPlaceholder: 'Например: Мухаммад аль-Кулайни, Аль-Хусейн ибн Убайдуллах...',
+      isnadBtn: 'Анализировать',
+      topSourcesTitle: 'Топ источников',
+      copyCard: 'Копировать карточку',
+      filtersPanelTitle: 'Инструменты анализа риджаля',
+    },
+    ar: {
+      statsTitle: '📊 إحصاءات قاعدة البيانات',
+      compareTitle: '⚖ مقارنة الرواة',
+      timelineTitle: '🕐 التسلسل الزمني للرواة',
+      glossaryTitle: '📖 مصطلحات علم الرجال',
+      isnadTitle: '⛓ محلل الإسناد',
+      isnadDesc: 'أدخل سلسلة الرواة مفصولة بفاصلة — سيقيّم النظام كل حلقة ويعطي حكماً.',
+      isnadPlaceholder: 'مثال: محمد الكليني، الحسين بن عبيدالله...',
+      isnadBtn: 'تحليل',
+      topSourcesTitle: 'أبرز المصادر',
+      copyCard: 'نسخ البطاقة',
+      filtersPanelTitle: 'أدوات تحليل الرجال',
+    },
+    en: {
+      statsTitle: '📊 Database Statistics',
+      compareTitle: '⚖ Compare Transmitters',
+      timelineTitle: '🕐 Transmitter Timeline',
+      glossaryTitle: '📖 Rijal Terminology Glossary',
+      isnadTitle: '⛓ Isnad Analyzer',
+      isnadDesc: 'Enter a chain of transmitters separated by commas — the system will evaluate each link.',
+      isnadPlaceholder: 'E.g.: Muhammad al-Kulayni, al-Husayn ibn Ubaydullah...',
+      isnadBtn: 'Analyze',
+      topSourcesTitle: 'Top Sources',
+      copyCard: 'Copy Card',
+      filtersPanelTitle: 'Rijal Analysis Tools',
+    },
+    fa: {
+      statsTitle: '📊 آمار پایگاه داده',
+      compareTitle: '⚖ مقایسه راویان',
+      timelineTitle: '🕐 تسلسل زمانی راویان',
+      glossaryTitle: '📖 واژه‌نامه اصطلاحات رجال',
+      isnadTitle: '⛓ تحلیلگر اسناد',
+      isnadDesc: 'زنجیره راویان را با کاما وارد کنید — سیستم هر حلقه را ارزیابی خواهد کرد.',
+      isnadPlaceholder: 'مثال: محمد کلینی، حسین بن عبیدالله...',
+      isnadBtn: 'تحلیل',
+      topSourcesTitle: 'منابع برتر',
+      copyCard: 'کپی کارت',
+      filtersPanelTitle: 'ابزارهای تحلیل رجال',
+    },
+    az: {
+      statsTitle: '📊 Verilənlər bazasının statistikası',
+      compareTitle: '⚖ Raviləri müqayisə et',
+      timelineTitle: '🕐 Ravilərin xronologiyası',
+      glossaryTitle: '📖 Elm ər-Rical terminləri lüğəti',
+      isnadTitle: '⛓ İsnad Analizatoru',
+      isnadDesc: 'Ravilər zəncirini vergüllə daxil edin — sistem hər həlqəni qiymətləndirərək nəticə verəcək.',
+      isnadPlaceholder: 'Məsələn: Məhəmməd əl-Kuleyni, əl-Hüseyn ibn Übeydullah...',
+      isnadBtn: 'Analiz et',
+      topSourcesTitle: 'Əsas mənbələr',
+      copyCard: 'Kartı kopyala',
+      filtersPanelTitle: 'Rical Təhlil Alətləri',
+    },
+  };
+  const pt = panelTexts[state.lang] || panelTexts.ru;
+  // Apply to panel elements that have stable structure
+  const statsPanelTitle = document.querySelector('#statsPanel .panel-title');
+  if (statsPanelTitle) statsPanelTitle.textContent = pt.statsTitle;
+  const comparePanelTitle = document.querySelector('#comparePanel .panel-title');
+  if (comparePanelTitle) comparePanelTitle.textContent = pt.compareTitle;
+  const timelinePanelTitle = document.querySelector('#timelinePanel .panel-title');
+  if (timelinePanelTitle) timelinePanelTitle.textContent = pt.timelineTitle;
+  const glossaryPanelTitle = document.querySelector('#glossaryPanel .panel-title');
+  if (glossaryPanelTitle) glossaryPanelTitle.textContent = pt.glossaryTitle;
+  const isnadPanelTitle = document.querySelector('#isnadPanel .panel-title');
+  if (isnadPanelTitle) isnadPanelTitle.textContent = pt.isnadTitle;
+  const isnadInput = $('isnadInput'); if(isnadInput) isnadInput.placeholder = pt.isnadPlaceholder;
+  const isnadAnalyze = $('isnadAnalyze'); if(isnadAnalyze) isnadAnalyze.textContent = pt.isnadBtn;
+  const barSectionTitle = document.querySelector('.bar-section-title'); if(barSectionTitle) barSectionTitle.textContent = pt.topSourcesTitle;
+  const copyCardLabel = $('copyCardLabel'); if(copyCardLabel) copyCardLabel.textContent = pt.copyCard;
 
   // Update stats
   updateStats();
@@ -3025,8 +3121,21 @@ function renderList() {
 
     const isFav = state.favorites.has(tx.id);
 
-    const displayName = ((state.lang === 'ar' || state.lang === 'fa') && tx.arabicName) ? tx.arabicName : tx.name;
-    const displaySub  = (state.lang === 'ar' || state.lang === 'fa') ? tx.name : (tx.arabicName || '');
+    const isRTLLang = state.lang === 'ar' || state.lang === 'fa';
+    const isAzLang  = state.lang === 'az';
+    // For AZ: show az-translated name from cache if available, else Russian name
+    let displayName, displaySub;
+    if (isRTLLang) {
+      displayName = tx.arabicName || tx.name;
+      displaySub  = tx.name;
+    } else if (isAzLang) {
+      const azCached = arCache[`az_${tx.id}`];
+      displayName = (azCached && azCached.name) ? azCached.name : tx.name;
+      displaySub  = tx.arabicName || '';
+    } else {
+      displayName = tx.name;
+      displaySub  = tx.arabicName || '';
+    }
     li.innerHTML = `
       <div class="tx-name">${displayName}</div>
       <div class="tx-arabic">${displaySub}</div>
@@ -3213,12 +3322,76 @@ const STATUS_FA = {
   'Крайне слабый': 'بسیار ضعیف',
 };
 
+
+// ── Status translations for AZ ────────────────────────────────
+const STATUS_AZ = {
+  'Тика': 'Siqa (Etibarlı)',
+  'Тика, Джалиль': 'Siqa, Cəlil',
+  'Тика, Асхаб аль-Иджма': 'Siqa, Əshabul-İcma',
+  'Тика, Факих': 'Siqa, Fəqih',
+  'Тика (Высшая степень)': 'Siqa siqa',
+  'Тика (Шейх Общины)': 'Siqa (Şeyxut-Taifə)',
+  'Тика (Первый Учитель)': 'Siqa (Şeyxul-Müfid)',
+  'Тика (Первый Мученик)': 'Siqa (Birinci Şəhid)',
+  'Тика (Второй Мученик)': 'Siqa (İkinci Şəhid)',
+  'Тика (Аллама)': 'Siqa (Əllamə)',
+  'Тика (Шейх ас-Садук)': 'Siqa (Şeyx Saduq)',
+  'Тика (Главный риджалист шиизма)': 'Siqa (Əsas Ricalşünas)',
+  'Садук': 'Saduq (Doğruçu)',
+  'Садук (Правдив, не мутакаллим)': 'Saduq',
+  'Муваттак': 'Müvəssəq',
+  'Спорный': 'Mübahisəli',
+  'Спорный (Муваттак)': 'Mübahisəli (Müvəssəq)',
+  'Слабый': 'Zəif (Daif)',
+  'Слабый (Насибит)': 'Zəif (Nasibiyyə)',
+  'Слабый (насибит)': 'Zəif (Nasibiyyə)',
+  'Слабый (мудаллис)': 'Zəif (Müdəllis)',
+  'Слабый (Маджхуль)': 'Zəif (Məchul)',
+  'Слабый (Даиф)': 'Zəif (Daif)',
+  'Слабый (Каззаб)': 'Kəzzab (Yalançı)',
+  'Слабый (Каззаб, лжец)': 'Kəzzab (Yalançı)',
+  'Слабый (даиф)': 'Zəif',
+  'Крайне слабый': 'Çox zəif',
+  'Не принимается': 'Qəbul edilmir',
+  'Не принимается (насибит)': 'Qəbul edilmir (Nasibiyyə)',
+  'Не принят': 'Qəbul olunmayıb',
+  'Не признаётся': 'Tanınmır',
+  'Не известен': 'Naməlum',
+  'Неизвестен': 'Naməlum',
+  'Малоизвестен': 'Az tanınan',
+  'Отвергнут': 'Rədd edilib',
+  'Игнорируется': 'Nəzərə alınmır',
+  'Рафидит': 'Rafizi',
+  'Сектант': 'Bidətçi',
+  'Матрук': 'Mətruk',
+  'Матрук / Лжец': 'Mətruk / Kəzzab',
+  'Хафиз': 'Hafiz',
+  'Шиит': 'Şiə',
+  'Шиит, правдивый': 'Şiə, doğruçu',
+  'Шиитский передатчик': 'Şiə ravisi',
+  'Шиитский богослов': 'Şiə alimi',
+  'Шиитский поэт': 'Şiə şairi',
+  'Шиитский мутакаллим': 'Şiə mütəkəllimi',
+  'Сахаби / Тика': 'Səhabə / Siqa',
+  'Тика / Садук': 'Siqa / Saduq',
+  'Тика / Хафиз': 'Siqa / Hafiz',
+  'Имам / Тика': 'İmam / Siqa',
+  'Садук / Мудаллис': 'Saduq / Müdəllis',
+  'Худжат аль-ислам / Имам': 'Hüccətül-İslam / İmam',
+  'Спорный / Садук': 'Mübahisəli / Saduq',
+  'Слабый / Садук': 'Zəif / Saduq',
+  'Слабый / Матрук': 'Zəif / Mətruk',
+  'Слабый / Неизвестен': 'Zəif / Naməlum',
+  'Слабый / Мудтариб': 'Zəif / Müztərib',
+};
+
 function translateStatusForLang(s, lang) {
   if (!s) return s;
   const key = s.trim();
   if (lang === 'ar') return STATUS_AR[key] || s;
   if (lang === 'en') return STATUS_EN[key] || s;
   if (lang === 'fa') return STATUS_FA[key] || s;
+  if (lang === 'az') return STATUS_AZ[key] || s;
   return s;
 }
 
@@ -3285,6 +3458,25 @@ ${(tx.sources || []).join('\n')}
 
 فقط با JSON معتبر پاسخ دهید، بدون هیچ متنی در خارج از آن، دقیقاً به این شکل:
 {"bio":"متن ترجمه‌شده","analysis":"تحلیل ترجمه‌شده","sources":["منبع۱","منبع۲"]}`;
+  } else if (lang === 'az') {
+    prompt = `Siz hədis ravilərinin tənqidi elmi olan "Elm ər-Rical" sahəsində mütəxəssis alimsiniz. Aşağıdakı mətni Rusca dilindən Azərbaycan dilinə — İslam hədis elminə uyğun dəqiq akademik üslubda — tərcümə edin.
+
+Ravinin Rusca adı: «${tx.name}»
+Ravinin ərəbcə adı: «${tx.arabicName || ''}»
+
+Bu ravinin adını Azərbaycan dilinin fonetik qaydalarına uyğun transkripsiya edin (məs: Мухаммад аль-Кулайни → Muhəmməd əl-Kuleyni).
+
+Ravi «${tx.arabicName || tx.name}» haqqında bioqrafik məlumat:
+${tx.bio || '—'}
+
+Təhlil:
+${(tx.analysis || '').replace(/<[^>]+>/g, '')}
+
+Mənbələr:
+${(tx.sources || []).join('\n')}
+
+Yalnız etibarlı JSON ilə cavab verin, xaricdə heç bir mətn olmadan, dəqiq bu formatda:
+{"name":"Azərbaycan dilində ravi adı","bio":"tərcümə olunmuş mətn","analysis":"tərcümə olunmuş təhlil","sources":["Mənbə 1","Mənbə 2"]}`;
   }
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -3359,7 +3551,8 @@ function fillDetail(tx, arData) {
   const isFa = state.lang === 'fa';
   const isEn = state.lang === 'en';
   const isRTL2 = isAr || isFa;
-  const needsTrans = isAr || isFa || isEn;
+  const isAz = state.lang === 'az';
+  const needsTrans = isAr || isFa || isEn || isAz;
 
   // Status: use instant translation dict first, then API result
   const shiaStatus = needsTrans
@@ -3374,6 +3567,11 @@ function fillDetail(tx, arData) {
 
   $('scShiaText').textContent = shiaStatus;
   $('scSunniText').textContent = sunniStatus;
+
+  // If AZ and translated name available — update the name display
+  if (isAz && arData?.name) {
+    $('detName').textContent = arData.name;
+  }
 
   // Bio
   const bioEl = $('detBio');
@@ -3430,26 +3628,33 @@ async function renderDetail(id) {
   const isAr = state.lang === 'ar';
 
   // Name display
-  const isRTL = isAr || state.lang === 'fa';
-  $('detName').textContent = isRTL ? (tx.arabicName || tx.name) : tx.name;
-  $('detArabic').textContent = isRTL ? tx.name : (tx.arabicName || '');
+  const isRTLdet = isAr || state.lang === 'fa';
+  const isAzDet  = state.lang === 'az';
+  const azNameCached = isAzDet && arCache[`az_${tx.id}`];
+  const detDisplayName = isRTLdet
+    ? (tx.arabicName || tx.name)
+    : isAzDet
+      ? ((azNameCached && azNameCached.name) ? azNameCached.name : tx.name)
+      : tx.name;
+  $('detName').textContent = detDisplayName;
+  $('detArabic').textContent = isRTLdet ? tx.name : (tx.arabicName || '');
   $('detId').textContent = t('detId', tx.id);
 
   // Name direction
-  $('detName').style.direction = isRTL ? 'rtl' : 'ltr';
-  $('detName').style.fontFamily = isRTL ? 'var(--font-arabic)' : '';
-  $('detArabic').style.direction = isRTL ? 'ltr' : 'rtl';
+  $('detName').style.direction = isRTLdet ? 'rtl' : 'ltr';
+  $('detName').style.fontFamily = isRTLdet ? 'var(--font-arabic)' : '';
+  $('detArabic').style.direction = isRTLdet ? 'ltr' : 'rtl';
 
   updateFavBtn();
   updateDetailScore(tx);
   $('content').scrollTo({ top: 0, behavior: 'smooth' });
 
-  const needsTranslation = (state.lang === 'ar' || state.lang === 'en' || state.lang === 'fa');
+  const needsTranslation = (state.lang === 'ar' || state.lang === 'en' || state.lang === 'fa' || state.lang === 'az');
 
   if (needsTranslation) {
     // Loading messages by language
-    const loadingMsg = { ar: 'جارٍ تحميل الترجمة...', en: 'Loading translation...', fa: 'در حال بارگذاری ترجمه...' };
-    const failMsg = { ar: '⚠ تعذّرت الترجمة — النص بالروسية', en: '⚠ Translation failed — showing Russian text', fa: '⚠ ترجمه ناموفق بود — متن روسی نمایش داده می‌شود' };
+    const loadingMsg = { ar: 'جارٍ تحميل الترجمة...', en: 'Loading translation...', fa: 'در حال بارگذاری ترجمه...', az: 'Tərcümə yüklənir...' };
+    const failMsg = { ar: '⚠ تعذّرت الترجمة — النص بالروسية', en: '⚠ Translation failed — showing Russian text', fa: '⚠ ترجمه ناموفق بود — متن روسی نمایش داده می‌شود', az: '⚠ Tərcümə uğursuz oldu — Rus mətn göstərilir' };
 
     // Step 1: instantly show statuses from dict
     fillDetail(tx, {
@@ -4528,70 +4733,6 @@ self.addEventListener('fetch', e => {
   const swUrl = URL.createObjectURL(blob);
   navigator.serviceWorker.register(swUrl).catch(() => {});
 }
-
-// ── Collapsible Filters Panel ──────────────────────────────────
-(function() {
-  const FILTER_PREF_KEY = 'rijal_filters_open';
-
-  function initCollapseFilters() {
-    const btn = document.getElementById('btnCollapseFilters');
-    const panel = document.getElementById('filtersPanel');
-    const sidebar = document.getElementById('sidebar');
-    if (!btn || !panel) return;
-
-    // Restore saved state
-    const savedOpen = localStorage.getItem(FILTER_PREF_KEY);
-    const isOpen = savedOpen === null ? true : savedOpen === '1';
-    setFiltersState(isOpen, false);
-
-    btn.addEventListener('click', () => {
-      const currentlyOpen = btn.getAttribute('aria-expanded') === 'true';
-      setFiltersState(!currentlyOpen, true);
-    });
-  }
-
-  function setFiltersState(open, save) {
-    const btn = document.getElementById('btnCollapseFilters');
-    const panel = document.getElementById('filtersPanel');
-    const sidebar = document.getElementById('sidebar');
-    if (!btn || !panel) return;
-
-    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    panel.classList.toggle('collapsed', !open);
-    if (sidebar) sidebar.classList.toggle('filters-hidden', !open);
-
-    // Update active-filter indicator
-    updateFilterIndicator();
-
-    if (save) {
-      try { localStorage.setItem('rijal_filters_open', open ? '1' : '0'); } catch(e) {}
-    }
-  }
-
-  function updateFilterIndicator() {
-    const btn = document.getElementById('btnCollapseFilters');
-    if (!btn) return;
-    // Check if any non-default filter is active
-    const filterActive = document.querySelector('.filter-chip.active:not([data-filter="all"])') ||
-                         document.querySelector('.epoch-chip.active:not([data-epoch="all"])') ||
-                         document.querySelector('.sect-chip.active:not([data-sect="all"])');
-    btn.classList.toggle('has-active-filters', !!filterActive);
-  }
-
-  // Call init after DOM ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCollapseFilters);
-  } else {
-    initCollapseFilters();
-  }
-
-  // Update indicator when filters change
-  document.addEventListener('click', (e) => {
-    if (e.target.closest('.filter-chip, .epoch-chip, .sect-chip')) {
-      setTimeout(updateFilterIndicator, 50);
-    }
-  });
-})();
 
 document.addEventListener('DOMContentLoaded', () => {
   init().catch(err => {
