@@ -1777,9 +1777,302 @@ html[lang="fa"] .header-left { flex-direction: row-reverse; }
 html[lang="fa"] .tx-arabic { font-family: var(--font-arabic); }
 html[lang="fa"] .det-arabic { direction: ltr; }
 html[lang="fa"] .det-top { flex-direction: row-reverse; }
+
+/* ═══════════════════════════════════════
+   DONATION MODAL
+═══════════════════════════════════════ */
+.donate-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: donateOverlayIn .3s ease;
+}
+@keyframes donateOverlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.donate-overlay.hiding {
+  animation: donateOverlayOut .25s ease forwards;
+}
+@keyframes donateOverlayOut {
+  to { opacity: 0; }
+}
+
+.donate-box {
+  background: linear-gradient(160deg, #0f1a2e 0%, #0d1421 60%, #0a1118 100%);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 20px;
+  width: min(520px, 100%);
+  max-height: min(90dvh, 720px);
+  overflow-y: auto;
+  box-shadow: 0 32px 80px rgba(0,0,0,.7), 0 0 0 1px rgba(13,148,136,.15);
+  animation: donateBoxIn .35s cubic-bezier(.22,1,.36,1);
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #1d2a44 transparent;
+}
+.donate-box::-webkit-scrollbar { width: 3px; }
+.donate-box::-webkit-scrollbar-thumb { background: #1d2a44; border-radius: 2px; }
+
+@keyframes donateBoxIn {
+  from { opacity: 0; transform: translateY(28px) scale(.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Top accent bar */
+.donate-accent {
+  height: 3px;
+  background: linear-gradient(90deg, #0d9488, #5eead4, #0d9488);
+  background-size: 200% 100%;
+  animation: accentFlow 3s linear infinite;
+  border-radius: 20px 20px 0 0;
+}
+@keyframes accentFlow {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+.donate-inner { padding: 24px 24px 28px; }
+
+/* Header row */
+.donate-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.donate-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1.25;
+  flex: 1;
+}
+.donate-title span { color: #5eead4; }
+.donate-close-btn {
+  flex-shrink: 0;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1;
+  transition: all .2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.donate-close-btn:hover {
+  background: rgba(225,29,72,.18);
+  border-color: rgba(225,29,72,.35);
+  color: #fda4af;
+  transform: rotate(90deg);
+}
+
+/* Body text */
+.donate-body {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.75;
+  margin-bottom: 22px;
+  border-left: 2px solid rgba(13,148,136,.4);
+  padding-left: 14px;
+}
+
+/* Wallets section */
+.donate-wallets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.wallet-row {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color .2s;
+  cursor: pointer;
+  position: relative;
+}
+.wallet-row:hover { border-color: rgba(13,148,136,.4); }
+.wallet-row:active { background: rgba(13,148,136,.06); }
+
+.wallet-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #5eead4;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+.wallet-gem { font-size: 13px; }
+
+.wallet-addr {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: #64748b;
+  word-break: break-all;
+  line-height: 1.5;
+  transition: color .2s;
+  user-select: all;
+}
+.wallet-row:hover .wallet-addr { color: #94a3b8; }
+
+.wallet-copy {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: rgba(13,148,136,.12);
+  border: 1px solid rgba(13,148,136,.25);
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 10px;
+  color: #5eead4;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .15s;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  touch-action: manipulation;
+}
+.wallet-row:hover .wallet-copy { opacity: 1; }
+
+/* Card row */
+.card-row {
+  background: linear-gradient(135deg, rgba(217,119,6,.08), rgba(180,83,9,.06));
+  border: 1px solid rgba(217,119,6,.22);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+}
+.card-row .wallet-label { color: #fbbf24; }
+.card-row .wallet-addr { font-size: 15px; letter-spacing: .1em; color: #94a3b8; font-family: 'IBM Plex Mono', monospace; }
+.card-recipient {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+/* Footer */
+.donate-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #475569;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  font-family: 'Amiri', serif;
+  line-height: 1.7;
+}
+.donate-footer em { color: #5eead4; font-style: normal; }
+
+/* Close button at bottom */
+.donate-dismiss {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  background: rgba(13,148,136,.1);
+  border: 1px solid rgba(13,148,136,.25);
+  border-radius: 10px;
+  padding: 10px;
+  color: #5eead4;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s;
+  touch-action: manipulation;
+}
+.donate-dismiss:hover { background: rgba(13,148,136,.2); border-color: rgba(94,234,212,.4); }
+
+@media (max-width: 480px) {
+  .donate-inner { padding: 18px 16px 22px; }
+  .donate-title { font-size: 16px; }
+  .donate-body { font-size: 13px; }
+  .wallet-addr { font-size: 10px; }
+  .card-row .wallet-addr { font-size: 13px; }
+  .wallet-copy { opacity: 1; }
+}
+
 </style>
 </head>
 <body>
+
+<!-- DONATION MODAL -->
+<div class="donate-overlay" id="donateOverlay" role="dialog" aria-modal="true" aria-label="Поддержать проект">
+  <div class="donate-box" id="donateBox">
+    <div class="donate-accent"></div>
+    <div class="donate-inner">
+
+      <div class="donate-head">
+        <div class="donate-title">📚 Поддержать <span>ShiaIsnad</span></div>
+        <button class="donate-close-btn" id="donateDismissTop" aria-label="Закрыть">✕</button>
+      </div>
+
+      <div class="donate-body">
+        Проект <strong style="color:#e2e8f0">ShiaIsnad</strong> развивается исключительно благодаря энтузиазму и поддержке неравнодушных людей.<br><br>
+        Сайт полностью бесплатный и останется таким, однако его развитие, поддержка домена, хостинга и добавление новых материалов требуют времени и средств.<br><br>
+        Если вы хотите поддержать проект любой суммой, мы будем искренне благодарны. Поддержка является исключительно <strong style="color:#5eead4">добровольной</strong>.
+      </div>
+
+      <div class="donate-wallets">
+
+        <div class="wallet-row" onclick="copyWallet(this, 'UQAyLRTWh4BXSYpH0SvIvTHlW-aFazWNckhRALaQx6thPoau')">
+          <div class="wallet-label"><span class="wallet-gem">💎</span> TON</div>
+          <div class="wallet-addr">UQAyLRTWh4BXSYpH0SvIvTHlW-aFazWNckhRALaQx6thPoau</div>
+          <span class="wallet-copy">Копировать</span>
+        </div>
+
+        <div class="wallet-row" onclick="copyWallet(this, 'TB2mj3BotRRaA6knJpA2FYRgMZqMGDpaZR')">
+          <div class="wallet-label"><span class="wallet-gem">💎</span> TRC20&nbsp;<span style="font-size:10px;opacity:.6;font-weight:400;text-transform:none;letter-spacing:0">(USDT / TRX)</span></div>
+          <div class="wallet-addr">TB2mj3BotRRaA6knJpA2FYRgMZqMGDpaZR</div>
+          <span class="wallet-copy">Копировать</span>
+        </div>
+
+        <div class="wallet-row" onclick="copyWallet(this, '0xd15758F5B14798EE37cDE73992A550118c593F62')">
+          <div class="wallet-label"><span class="wallet-gem">💎</span> ERC20 / BEP20&nbsp;<span style="font-size:10px;opacity:.6;font-weight:400;text-transform:none;letter-spacing:0">(ETH, BNB, USDT...)</span></div>
+          <div class="wallet-addr">0xd15758F5B14798EE37cDE73992A550118c593F62</div>
+          <span class="wallet-copy">Копировать</span>
+        </div>
+
+      </div>
+
+      <div class="card-row">
+        <div class="wallet-label">💳 Сбербанк</div>
+        <div class="wallet-addr" style="cursor:pointer" onclick="copyWallet(this.parentElement, '2202208585323547')">2202 2085 8532 3547</div>
+        <div class="card-recipient">Получатель: Разаков Аминджон</div>
+        <span class="wallet-copy" style="opacity:1">Копировать</span>
+      </div>
+
+      <div class="donate-footer">
+        <em>Да вознаградит Аллах всех, кто помогает развитию проекта и распространению полезных знаний.</em>
+        <button class="donate-dismiss" id="donateDismissBottom">Закрыть и перейти к базе данных →</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <!-- Loading -->
 <div class="loading-overlay" id="loading">
@@ -4151,6 +4444,64 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loading) loading.style.display = 'none';
   });
 });
+
+
+// ═══════════════════════════════════════
+// DONATION MODAL
+// ═══════════════════════════════════════
+function closeDonateModal() {
+  const ov = document.getElementById('donateOverlay');
+  if (!ov) return;
+  ov.classList.add('hiding');
+  setTimeout(() => { ov.style.display = 'none'; }, 280);
+  try { localStorage.setItem('shia_donate_seen', '1'); } catch(e) {}
+}
+
+function copyWallet(rowEl, addr) {
+  const cleanAddr = addr.replace(/\s/g, '');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(cleanAddr).catch(() => fallbackCopy(cleanAddr));
+  } else {
+    fallbackCopy(cleanAddr);
+  }
+  // Visual feedback on the row
+  const orig = rowEl.style.borderColor;
+  rowEl.style.borderColor = 'rgba(13,148,136,.7)';
+  rowEl.style.background = 'rgba(13,148,136,.08)';
+  const copyBtn = rowEl.querySelector('.wallet-copy');
+  if (copyBtn) { const t = copyBtn.textContent; copyBtn.textContent = '✓ Скопировано'; setTimeout(() => { copyBtn.textContent = t; }, 2000); }
+  setTimeout(() => { rowEl.style.borderColor = orig; rowEl.style.background = ''; }, 1800);
+}
+
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.cssText = 'position:fixed;top:-9999px';
+  document.body.appendChild(ta); ta.focus(); ta.select();
+  try { document.execCommand('copy'); } catch(e) {}
+  ta.remove();
+}
+
+(function initDonateModal() {
+  try { if (localStorage.getItem('shia_donate_seen') === '1') {
+    const ov = document.getElementById('donateOverlay');
+    if (ov) ov.style.display = 'none'; return;
+  }} catch(e) {}
+  const closeIds = ['donateDismissTop', 'donateDismissBottom'];
+  closeIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', closeDonateModal);
+  });
+  // Close on overlay click (outside box)
+  const ov = document.getElementById('donateOverlay');
+  if (ov) ov.addEventListener('click', function(e) {
+    if (e.target === ov) closeDonateModal();
+  });
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeDonateModal();
+  }, { once: true });
+})();
+
 </script>
 </body>
 </html>
