@@ -2014,6 +2014,88 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
   .wallet-copy { opacity: 1; }
 }
 
+
+/* ═══════════════════════════════════════
+   COLLAPSIBLE FILTERS PANEL
+═══════════════════════════════════════ */
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.search-row .search-wrap {
+  flex: 1;
+}
+
+.btn-collapse-filters {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  background: var(--ink-2);
+  border: 1px solid var(--border-bright);
+  border-radius: 8px;
+  color: var(--text-3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+}
+.btn-collapse-filters:hover {
+  background: var(--teal-glow);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+.btn-collapse-filters[aria-expanded="true"] .collapse-icon {
+  transform: rotate(0deg);
+  transition: transform .25s ease;
+}
+.btn-collapse-filters[aria-expanded="false"] .collapse-icon {
+  transform: rotate(180deg);
+  transition: transform .25s ease;
+}
+
+/* Animated collapsible panel */
+.filters-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height .3s ease, opacity .25s ease, margin .25s ease;
+  margin-top: 0;
+}
+.filters-panel.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin-top: -6px;
+  pointer-events: none;
+}
+
+/* Compact stats bar when filters hidden */
+.stats-bar {
+  transition: background .2s;
+}
+.sidebar.filters-hidden .stats-bar {
+  background: var(--ink-2);
+  border-top: 1px solid var(--teal-glow);
+}
+
+/* Indicator dot on toggle button when filters are active */
+.btn-collapse-filters.has-active-filters::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 6px;
+  height: 6px;
+  background: var(--teal);
+  border-radius: 50%;
+}
+.btn-collapse-filters {
+  position: relative;
+}
 </style>
 </head>
 <body>
@@ -2240,60 +2322,70 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
   <!-- Sidebar / Drawer -->
   <aside class="sidebar tab-active" id="sidebar">
     <div class="sidebar-top">
-      <!-- Search -->
-      <div class="search-wrap">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-        <input type="search" class="search-input" id="searchInput" autocomplete="off" autocorrect="off" spellcheck="false">
-        <button class="search-clear" id="searchClear" aria-label="Очистить">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      <!-- Search row with collapse toggle -->
+      <div class="search-row">
+        <div class="search-wrap">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" class="search-input" id="searchInput" autocomplete="off" autocorrect="off" spellcheck="false">
+          <button class="search-clear" id="searchClear" aria-label="Очистить">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <button class="btn-collapse-filters" id="btnCollapseFilters" title="Скрыть/показать фильтры" aria-expanded="true" aria-controls="filtersPanel">
+          <svg class="collapse-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"/>
           </svg>
         </button>
       </div>
 
-      <!-- Filters -->
-      <div class="filter-bar" id="filterBar">
-        <button class="filter-chip active" data-filter="all" id="filterAll">—</button>
-        <button class="filter-chip" data-filter="trust" id="filterTrust">—</button>
-        <button class="filter-chip" data-filter="disputed" id="filterDisputed">—</button>
-        <button class="filter-chip" data-filter="weak" id="filterWeak">—</button>
-      </div>
+      <!-- Collapsible filters panel -->
+      <div class="filters-panel" id="filtersPanel">
+        <!-- Filters -->
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-chip active" data-filter="all" id="filterAll">—</button>
+          <button class="filter-chip" data-filter="trust" id="filterTrust">—</button>
+          <button class="filter-chip" data-filter="disputed" id="filterDisputed">—</button>
+          <button class="filter-chip" data-filter="weak" id="filterWeak">—</button>
+        </div>
 
-      <!-- Epoch filter -->
-      <div class="filter-section-label" id="epochLabel">Эпоха</div>
-      <div class="epoch-bar" id="epochBar">
-        <button class="epoch-chip active" data-epoch="all">Все</button>
-        <button class="epoch-chip" data-epoch="sahaba">Сахабы</button>
-        <button class="epoch-chip" data-epoch="tabiin">Табиины</button>
-        <button class="epoch-chip" data-epoch="2">II в.х.</button>
-        <button class="epoch-chip" data-epoch="3">III в.х.</button>
-        <button class="epoch-chip" data-epoch="4">IV в.х.</button>
-        <button class="epoch-chip" data-epoch="5+">V+ в.х.</button>
-      </div>
+        <!-- Epoch filter -->
+        <div class="filter-section-label" id="epochLabel">Эпоха</div>
+        <div class="epoch-bar" id="epochBar">
+          <button class="epoch-chip active" data-epoch="all">Все</button>
+          <button class="epoch-chip" data-epoch="sahaba">Сахабы</button>
+          <button class="epoch-chip" data-epoch="tabiin">Табиины</button>
+          <button class="epoch-chip" data-epoch="2">II в.х.</button>
+          <button class="epoch-chip" data-epoch="3">III в.х.</button>
+          <button class="epoch-chip" data-epoch="4">IV в.х.</button>
+          <button class="epoch-chip" data-epoch="5+">V+ в.х.</button>
+        </div>
 
-      <!-- Sect filter -->
-      <div class="filter-section-label" id="sectLabel">Течение</div>
-      <div class="sect-bar" id="sectBar">
-        <button class="sect-chip active" data-sect="all">Все</button>
-        <button class="sect-chip" data-sect="imamit">Имамиты</button>
-        <button class="sect-chip" data-sect="nasibi">Насибиты</button>
-        <button class="sect-chip" data-sect="ghulat">Гулаты</button>
-        <button class="sect-chip" data-sect="wakifi">Вакифиты</button>
-        <button class="sect-chip" data-sect="zaydi">Зейдиты</button>
-      </div>
+        <!-- Sect filter -->
+        <div class="filter-section-label" id="sectLabel">Течение</div>
+        <div class="sect-bar" id="sectBar">
+          <button class="sect-chip active" data-sect="all">Все</button>
+          <button class="sect-chip" data-sect="imamit">Имамиты</button>
+          <button class="sect-chip" data-sect="nasibi">Насибиты</button>
+          <button class="sect-chip" data-sect="ghulat">Гулаты</button>
+          <button class="sect-chip" data-sect="wakifi">Вакифиты</button>
+          <button class="sect-chip" data-sect="zaydi">Зейдиты</button>
+        </div>
 
-      <!-- Quick actions -->
-      <div class="quick-actions">
-        <button class="btn-quick" id="btnShowFav">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <span id="favLabel">—</span>
-        </button>
-        <button class="btn-quick" id="btnShowAll">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          <span id="allLabel">—</span>
-        </button>
+        <!-- Quick actions -->
+        <div class="quick-actions">
+          <button class="btn-quick" id="btnShowFav">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span id="favLabel">—</span>
+          </button>
+          <button class="btn-quick" id="btnShowAll">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <span id="allLabel">—</span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -4436,6 +4528,70 @@ self.addEventListener('fetch', e => {
   const swUrl = URL.createObjectURL(blob);
   navigator.serviceWorker.register(swUrl).catch(() => {});
 }
+
+// ── Collapsible Filters Panel ──────────────────────────────────
+(function() {
+  const FILTER_PREF_KEY = 'rijal_filters_open';
+
+  function initCollapseFilters() {
+    const btn = document.getElementById('btnCollapseFilters');
+    const panel = document.getElementById('filtersPanel');
+    const sidebar = document.getElementById('sidebar');
+    if (!btn || !panel) return;
+
+    // Restore saved state
+    const savedOpen = localStorage.getItem(FILTER_PREF_KEY);
+    const isOpen = savedOpen === null ? true : savedOpen === '1';
+    setFiltersState(isOpen, false);
+
+    btn.addEventListener('click', () => {
+      const currentlyOpen = btn.getAttribute('aria-expanded') === 'true';
+      setFiltersState(!currentlyOpen, true);
+    });
+  }
+
+  function setFiltersState(open, save) {
+    const btn = document.getElementById('btnCollapseFilters');
+    const panel = document.getElementById('filtersPanel');
+    const sidebar = document.getElementById('sidebar');
+    if (!btn || !panel) return;
+
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    panel.classList.toggle('collapsed', !open);
+    if (sidebar) sidebar.classList.toggle('filters-hidden', !open);
+
+    // Update active-filter indicator
+    updateFilterIndicator();
+
+    if (save) {
+      try { localStorage.setItem('rijal_filters_open', open ? '1' : '0'); } catch(e) {}
+    }
+  }
+
+  function updateFilterIndicator() {
+    const btn = document.getElementById('btnCollapseFilters');
+    if (!btn) return;
+    // Check if any non-default filter is active
+    const filterActive = document.querySelector('.filter-chip.active:not([data-filter="all"])') ||
+                         document.querySelector('.epoch-chip.active:not([data-epoch="all"])') ||
+                         document.querySelector('.sect-chip.active:not([data-sect="all"])');
+    btn.classList.toggle('has-active-filters', !!filterActive);
+  }
+
+  // Call init after DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCollapseFilters);
+  } else {
+    initCollapseFilters();
+  }
+
+  // Update indicator when filters change
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.filter-chip, .epoch-chip, .sect-chip')) {
+      setTimeout(updateFilterIndicator, 50);
+    }
+  });
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
   init().catch(err => {
