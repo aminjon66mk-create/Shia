@@ -4212,12 +4212,26 @@ async function init() {
   loadSettings();
   applyLang();
 
-  // Load data from transmitters.json
+  // Load data from transmitters.json + transmitters2.json (если есть)
   let raw = [];
   try {
-    const res = await fetch('transmitters.json');
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    raw = await res.json();
+    const res1 = await fetch('transmitters.json');
+    if (!res1.ok) throw new Error('HTTP ' + res1.status);
+    const data1 = await res1.json();
+
+    // Пробуем загрузить вторую базу — если нет файла, просто пропускаем
+    let data2 = [];
+    try {
+      const res2 = await fetch('transmitters2.json');
+      if (res2.ok) {
+        data2 = await res2.json();
+      }
+    } catch(e2) {
+      console.info('transmitters2.json не найден — загружена только основная база');
+    }
+
+    // Объединяем
+    raw = [...data1, ...data2];
   } catch(e) {
     console.error('Failed to load transmitters.json:', e);
     const loading = $('loading');
@@ -4226,7 +4240,8 @@ async function init() {
     }
     return;
   }
-  raw.forEach((item, i) => { if (item.id === undefined) item.id = i; });
+  // Назначаем ID по индексу — гарантирует уникальность
+  raw.forEach((item, i) => { item.id = i; });
   state.data = raw;
 
   renderList();

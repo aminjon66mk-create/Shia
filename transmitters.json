@@ -29002,5 +29002,2573 @@
     ],
     "score": 0,
     "id": 1793
+  },
+  {
+    "name": "Фадл ибн Юнус",
+    "arabicName": "فضل بن يونس",
+    "bio": "Брат Фадля ибн Шазана. Надежный передатчик от Имама Казима (а) и Риды (а).",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 306",
+      "Му'джам Риджаль аль-Хадис, т. 14"
+    ],
+    "score": 0,
+    "id": 1794
+  },
+  {
+    "name": "Абу Басир аль-Асади (Лейс)",
+    "arabicName": "أبو بصير الأسدي",
+    "bio": "Из Асхаб аль-Иджма. Слепой факих. Один из четырех столпов.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 440",
+      "Риджаль аль-Кашши, стр. 232"
+    ],
+    "score": 0,
+    "id": 1795
+  },
+  {
+    "name": "Ан-Наджаши",
+    "arabicName": "النجاشي",
+    "bio": "Автор «Риджаль ан-Наджаши». Потомок сподвижника Пророка.",
+    "shiaStatus": "Тика (Главный риджалист)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "",
+    "sources": [
+      "Риджаль ан-Наджаши",
+      "Тарих Багдад, т. 4"
+    ],
+    "score": 0,
+    "id": 1796
+  },
+  {
+    "name": "Саид ибн аль-Мусаййиб",
+    "arabicName": "سعيد بن المسيب",
+    "bio": "Величайший факих Медины среди табиинов (ум. 94 г.х.). Один из семи факихов Медины.",
+    "shiaStatus": "Спорный / Не передал о вилаяте",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих Медины",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 120",
+      "Тахзиб ат-тахзиб, т. 3, стр. 280"
+    ],
+    "score": 0,
+    "id": 1797
+  },
+  {
+    "name": "Аль-Касим ибн Мухаммад ибн Аби Бакр",
+    "arabicName": "القاسم بن محمد بن أبي بكر",
+    "bio": "Один из семи факихов Медины, внук Абу Бакра (ум. 106 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 135",
+      "Тахзиб ат-тахзиб, т. 8, стр. 150"
+    ],
+    "score": 0,
+    "id": 1798
+  },
+  {
+    "name": "Урва ибн аз-Зубайр",
+    "arabicName": "عروة بن الزبير",
+    "bio": "Один из семи факихов Медины, брат Абдуллаха ибн аз-Зубайра (ум. 94 г.х.).",
+    "shiaStatus": "Спорный / Враг Али",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 110",
+      "Тахзиб ат-тахзиб, т. 7, стр. 280"
+    ],
+    "score": 0,
+    "id": 1799
+  },
+  {
+    "name": "Абу Салама ибн Абдуррахман ибн Ауф",
+    "arabicName": "أبو سلمة بن عبد الرحمن بن عوف",
+    "bio": "Один из семи факихов Медины (ум. 94 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 115",
+      "Тахзиб ат-тахзиб, т. 7, стр. 150"
+    ],
+    "score": 0,
+    "id": 1800
+  },
+  {
+    "name": "Сулейман ибн Ясар",
+    "arabicName": "سليمان بن يسار",
+    "bio": "Один из семи факихов Медины, вольноотпущенник Маймуны (ум. 107 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 150",
+      "Тахзиб ат-тахзиб, т. 4, стр. 200"
+    ],
+    "score": 0,
+    "id": 1801
+  },
+  {
+    "name": "Икрама, вольноотпущенник Ибн Аббаса",
+    "arabicName": "عكرمة مولى ابن عباس",
+    "bio": "Великий передатчик тафсира от Ибн Аббаса (ум. 105 г.х.).",
+    "shiaStatus": "Спорный / Передал от Ибн Аббаса",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик тафсира",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 200",
+      "Тахзиб ат-тахзиб, т. 9, стр. 100"
+    ],
+    "score": 0,
+    "id": 1802
+  },
+  {
+    "name": "Муджахид ибн Джабр",
+    "arabicName": "مجاهد بن جبر",
+    "bio": "Великий передатчик тафсира, ученик Ибн Аббаса (ум. 102 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик тафсира",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 180",
+      "Тахзиб ат-тахзиб, т. 10, стр. 280"
+    ],
+    "score": 0,
+    "id": 1803
+  },
+  {
+    "name": "Ата ибн Аби Рабах",
+    "arabicName": "عطاء بن أبي رباح",
+    "bio": "Муфтий Мекки среди табиинов (ум. 114 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Муфтий Мекки",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 220",
+      "Тахзиб ат-тахзиб, т. 6, стр. 150"
+    ],
+    "score": 0,
+    "id": 1804
+  },
+  {
+    "name": "Таус ибн Кайсан аль-Йамани",
+    "arabicName": "طاوس بن كيسان اليماني",
+    "bio": "Великий факих Йемена среди табиинов (ум. 106 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих Йемена",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 250",
+      "Тахзиб ат-тахзиб, т. 5, стр. 280"
+    ],
+    "score": 0,
+    "id": 1805
+  },
+  {
+    "name": "Нафи, вольноотпущенник Ибн Умара",
+    "arabicName": "نافع مولى ابن عمر",
+    "bio": "Великий передатчик от Ибн Умара (ум. 117 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 280",
+      "Тахзиб ат-тахзиб, т. 11, стр. 150"
+    ],
+    "score": 0,
+    "id": 1806
+  },
+  {
+    "name": "Зайд ибн Аслам",
+    "arabicName": "زيد بن أسلم",
+    "bio": "Передатчик от своего отца Аслама (ум. 136 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 5, стр. 300",
+      "Тахзиб ат-тахзиб, т. 3, стр. 280"
+    ],
+    "score": 0,
+    "id": 1807
+  },
+  {
+    "name": "Яхья ибн Саид аль-Ансари",
+    "arabicName": "يحيى بن سعيد الأنصاري",
+    "bio": "Великий передатчик Медины (ум. 143 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 6, стр. 100",
+      "Тахзиб ат-тахзиб, т. 11, стр. 280"
+    ],
+    "score": 0,
+    "id": 1808
+  },
+  {
+    "name": "Мухаммад ибн аль-Мункадир",
+    "arabicName": "محمد بن المنكدر",
+    "bio": "Передатчик от Джабира ибн Абдуллаха (ум. 130 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 6, стр. 120",
+      "Тахзиб ат-тахзиб, т. 9, стр. 150"
+    ],
+    "score": 0,
+    "id": 1809
+  },
+  {
+    "name": "Хишам ибн Урва",
+    "arabicName": "هشام بن عروة",
+    "bio": "Сын Урвы ибн аз-Зубайра, передатчик от отца (ум. 145 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 6, стр. 150",
+      "Тахзиб ат-тахзиб, т. 11, стр. 300"
+    ],
+    "score": 0,
+    "id": 1810
+  },
+  {
+    "name": "Абдуллах ибн Динар",
+    "arabicName": "عبد الله بن دينار",
+    "bio": "Вольноотпущенник, передатчик от Ибн Умара (ум. 127 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 6, стр. 180",
+      "Тахзиб ат-тахзиб, т. 5, стр. 280"
+    ],
+    "score": 0,
+    "id": 1811
+  },
+  {
+    "name": "Абу аз-Зинад Абдуллах ибн Закван",
+    "arabicName": "أبو الزناد عبد الله بن ذكوان",
+    "bio": "Передатчик Медины (ум. 174 г.х.).",
+    "shiaStatus": "Спорный",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Передатчик",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 100",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1812
+  },
+  {
+    "name": "Мухаммад ибн Исхак ибн Ясар",
+    "arabicName": "محمد بن إسحاق بن يسار",
+    "bio": "Автор «Сира», великий историк (ум. 151 г.х.).",
+    "shiaStatus": "Слабый / Историк, не факих",
+    "shiaStatusStyle": "status-weak",
+    "sunniStatus": "Тика / Историк",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 6, стр. 200",
+      "Тахзиб ат-тахзиб, т. 9, стр. 280"
+    ],
+    "score": 0,
+    "id": 1813
+  },
+  {
+    "name": "Аль-Аузаи Абдуррахман ибн Амр",
+    "arabicName": "الأوزاعي عبد الرحمن بن عمرو",
+    "bio": "Имам Шама, основатель аузаийского мазхаба (ум. 157 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам мазхаба",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 250",
+      "Тахзиб ат-тахзиб, т. 6, стр. 280"
+    ],
+    "score": 0,
+    "id": 1814
+  },
+  {
+    "name": "Аль-Ляйс ибн Саад",
+    "arabicName": "الليث بن سعد",
+    "bio": "Имам Египта, богаче Малика (ум. 175 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам Египта",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 280",
+      "Тахзиб ат-тахзиб, т. 9, стр. 150"
+    ],
+    "score": 0,
+    "id": 1815
+  },
+  {
+    "name": "Аль-Хумайди Абдуллах ибн аз-Зубайр",
+    "arabicName": "الحميدي عبد الله بن الزبير",
+    "bio": "Учитель аль-Бухари, великий мухаддис (ум. 219 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 250",
+      "Тахзиб ат-тахзиб, т. 5, стр. 280"
+    ],
+    "score": 0,
+    "id": 1816
+  },
+  {
+    "name": "Мухаммад ибн Башшар Бундар",
+    "arabicName": "محمد بن بشار بندار",
+    "bio": "Учитель аль-Бухари, Муслима и ат-Тирмизи (ум. 250 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 280",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1817
+  },
+  {
+    "name": "Мухаммад ибн Яхья ибн Аби Умар аль-Адаки",
+    "arabicName": "محمد بن يحيى بن أبي عمر العدني",
+    "bio": "Великий мухаддис Багдада (ум. 243 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 300",
+      "Тахзиб ат-тахзиб, т. 9, стр. 280"
+    ],
+    "score": 0,
+    "id": 1818
+  },
+  {
+    "name": "Абу Хайсама Зухайр ибн Харб",
+    "arabicName": "أبو خيثمة زهير بن حرب",
+    "bio": "Великий мухаддис Багдада (ум. 248 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 340",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1819
+  },
+  {
+    "name": "Исхак аль-Каусадж",
+    "arabicName": "إسحاق الكوسج",
+    "bio": "Великий мухаддис, ученик Яхьи ибн Маина (ум. 251 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 360",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1820
+  },
+  {
+    "name": "Мухаммад ибн Рафи",
+    "arabicName": "محمد بن رافع",
+    "bio": "Великий мухаддис Нишапура (ум. 261 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 380",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1821
+  },
+  {
+    "name": "Мухаммад ибн аль-Мусанна аль-Анази",
+    "arabicName": "محمد بن المثنى العنزي",
+    "bio": "Великий мухаддис Басры (ум. 252 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 400",
+      "Тахзиб ат-тахзиб, т. 9, стр. 280"
+    ],
+    "score": 0,
+    "id": 1822
+  },
+  {
+    "name": "Абу Зур'а ар-Рази",
+    "arabicName": "أبو زرعة الرازي",
+    "bio": "Великий критик хадисов, имам джарха (ум. 264 г.х.).",
+    "shiaStatus": "Спорный / Суннитский критик",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам джарха",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 420",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1823
+  },
+  {
+    "name": "Абу Хатим Мухаммад ибн Идрис ар-Рази",
+    "arabicName": "أبو حاتم محمد بن إدريس الرازي",
+    "bio": "Великий критик хадисов, брат Абу Зур'а (ум. 277 г.х.).",
+    "shiaStatus": "Спорный / Суннитский критик",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам джарха",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 440",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1824
+  },
+  {
+    "name": "Абу Бакр Ахмад ибн Амр аль-Асрам",
+    "arabicName": "أبو بكر أحمد بن عمرو الأسرام",
+    "bio": "Великий мухаддис, ученик Ахмада ибн Ханбаля (ум. 261 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 460",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1825
+  },
+  {
+    "name": "Абу Дауд Сулейман ибн аль-Ашас ас-Сиджистани",
+    "arabicName": "أبو داود سليمان بن الأشعث السجستاني",
+    "bio": "Автор «Сунан Аби Дауд», великий мухаддис (ум. 275 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 520",
+      "Тахзиб ат-тахзиб, т. 4, стр. 300"
+    ],
+    "score": 0,
+    "id": 1826
+  },
+  {
+    "name": "Мухаммад ибн Иса ат-Тирмизи",
+    "arabicName": "محمد بن عيسى الترمذي",
+    "bio": "Автор «Сунан ат-Тирмизи», великий мухаддис (ум. 279 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 540",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1827
+  },
+  {
+    "name": "Ахмад ибн Шуайб ан-Насаи",
+    "arabicName": "أحمد بن شعيب النسائي",
+    "bio": "Автор «Сунан ан-Насаи», великий мухаддис (ум. 303 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 560",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1828
+  },
+  {
+    "name": "Мухаммад ибн Язид ибн Маджа аль-Казвини",
+    "arabicName": "محمد بن يزيد بن ماجه القزويني",
+    "bio": "Автор «Сунан Ибн Маджа», великий мухаддис (ум. 273 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 580",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1829
+  },
+  {
+    "name": "Мухаммад ибн Исхак ибн Хузайма",
+    "arabicName": "محمد بن إسحاق بن خزيمة",
+    "bio": "Автор «Сахих Ибн Хузайма», великий мухаддис (ум. 311 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 100",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1830
+  },
+  {
+    "name": "Мухаммад ибн Хиббан аль-Бусти",
+    "arabicName": "محمد بن حبان البستي",
+    "bio": "Автор «Сахих Ибн Хиббан», великий мухаддис (ум. 354 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 120",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1831
+  },
+  {
+    "name": "Абу Бакр аль-Исмаили",
+    "arabicName": "أبو بكر الإسماعيلي",
+    "bio": "Великий мухаддис Нишапура (ум. 371 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 180",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1832
+  },
+  {
+    "name": "Абу аль-Хасан ад-Даракутни",
+    "arabicName": "أبو الحسن الدارقطني",
+    "bio": "Величайший критик хадисов Багдада (ум. 385 г.х.).",
+    "shiaStatus": "Спорный / Суннитский критик",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 200",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1833
+  },
+  {
+    "name": "Хаммад ибн Аби Сулейман",
+    "arabicName": "حماد بن أبي سليمان",
+    "bio": "Учитель Абу Ханифы, великий факих Куфы (ум. 120 г.х.).",
+    "shiaStatus": "Спорный / Суннитский факих",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Факих",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 6, стр. 220",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1834
+  },
+  {
+    "name": "Шарик ибн Абдуллах ан-Нахаи",
+    "arabicName": "شريك بن عبد الله النخعي",
+    "bio": "Судья Куфы, великий мухаддис (ум. 177 г.х.).",
+    "shiaStatus": "Спорный / Суннитский судья",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Судья",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 360",
+      "Тахзиб ат-тахзиб, т. 4, стр. 300"
+    ],
+    "score": 0,
+    "id": 1835
+  },
+  {
+    "name": "Заида ибн Абу Унсайя",
+    "arabicName": "زائدة بن أبي أنيسة",
+    "bio": "Великий мухаддис Куфы (ум. 161 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 380",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1836
+  },
+  {
+    "name": "Исмаил ибн Джафар аль-Ансари",
+    "arabicName": "إسماعيل بن جعفر الأنصاري",
+    "bio": "Великий мухаддис Медины (ум. 180 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 400",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1837
+  },
+  {
+    "name": "Абдурраззак ибн Хаммам ас-Санани",
+    "arabicName": "عبد الرزاق بن همام الصنعاني",
+    "bio": "Автор «аль-Мусаннаф», великий мухаддис Йемена (ум. 211 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 20",
+      "Тахзиб ат-тахзиб, т. 6, стр. 300"
+    ],
+    "score": 0,
+    "id": 1838
+  },
+  {
+    "name": "Маамар ибн Рашид аль-Азди",
+    "arabicName": "معمر بن راشد الأزدي",
+    "bio": "Великий мухаддис Басры (ум. 153 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 420",
+      "Тахзиб ат-тахзиб, т. 10, стр. 300"
+    ],
+    "score": 0,
+    "id": 1839
+  },
+  {
+    "name": "Абд аль-Малик ибн Джурайдж",
+    "arabicName": "عبد الملك بن جريج",
+    "bio": "Великий мухаддис Мекки (ум. 150 г.х.).",
+    "shiaStatus": "Спорный / Суннитский мухаддис",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 440",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1840
+  },
+  {
+    "name": "Саид ибн Аби Аруба",
+    "arabicName": "سعيد بن أبي عروبة",
+    "bio": "Великий мухаддис Басры (ум. 156 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 460",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1841
+  },
+  {
+    "name": "Аффан ибн Муслим аль-Баззар",
+    "arabicName": "عفان بن مسلم البزار",
+    "bio": "Великий мухаддис Багдада (ум. 219 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 500",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1842
+  },
+  {
+    "name": "Абу аль-Валид Сулейман ибн Давуд ат-Таялиси",
+    "arabicName": "أبو الوليد سليمان بن داود الطيالسي",
+    "bio": "Великий мухаддис Басры (ум. 226 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 540",
+      "Тахзиб ат-тахзиб, т. 4, стр. 300"
+    ],
+    "score": 0,
+    "id": 1843
+  },
+  {
+    "name": "Хаджадж ибн Минхаль",
+    "arabicName": "حجاج بن منهال",
+    "bio": "Великий мухаддис Басры (ум. 225 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 560",
+      "Тахзиб ат-тахзиб, т. 2, стр. 300"
+    ],
+    "score": 0,
+    "id": 1844
+  },
+  {
+    "name": "Абу Маамар аль-Катаи",
+    "arabicName": "أبو معمر القطيعي",
+    "bio": "Великий мухаддис Багдада (ум. 230 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 580",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1845
+  },
+  {
+    "name": "Мухаммад ибн Джафар Гундар",
+    "arabicName": "محمد بن جعفر غندر",
+    "bio": "Великий мухаддис Басры (ум. 193 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 600",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1846
+  },
+  {
+    "name": "Роух ибн Убада",
+    "arabicName": "روح بن عبادة",
+    "bio": "Великий мухаддис Басры (ум. 212 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 620",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1847
+  },
+  {
+    "name": "Язид ибн Харун ас-Суллами",
+    "arabicName": "يزيد بن هرون السلمي",
+    "bio": "Великий мухаддис Васита (ум. 206 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 640",
+      "Тахзиб ат-тахзиб, т. 11, стр. 300"
+    ],
+    "score": 0,
+    "id": 1848
+  },
+  {
+    "name": "Ибн Аби Зиада",
+    "arabicName": "ابن أبي زياد",
+    "bio": "Великий мухаддис Куфы (ум. 195 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 660",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1849
+  },
+  {
+    "name": "Исмаил ибн Ибрахим ибн Улайя",
+    "arabicName": "إسماعيل بن إبراهيم بن علية",
+    "bio": "Великий мухаддис Басры (ум. 198 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 680",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1850
+  },
+  {
+    "name": "Абу Асима ад-Дабби",
+    "arabicName": "أبو عاصم الضبي",
+    "bio": "Великий мухаддис Куфы (ум. 209 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 700",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1851
+  },
+  {
+    "name": "Абдуллах ибн Джафар аль-Мисри",
+    "arabicName": "عبد الله بن جعفر المصري",
+    "bio": "Великий мухаддис Египта (ум. 199 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 720",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1852
+  },
+  {
+    "name": "Абдуллах ибн Вахб аль-Мисри",
+    "arabicName": "عبد الله بن وهب المصري",
+    "bio": "Великий мухаддис Египта (ум. 212 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 740",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1853
+  },
+  {
+    "name": "Харун ибн Маруф",
+    "arabicName": "هارون بن معروف",
+    "bio": "Великий мухаддис Багдада (ум. 231 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 760",
+      "Тахзиб ат-тахзиб, т. 11, стр. 300"
+    ],
+    "score": 0,
+    "id": 1854
+  },
+  {
+    "name": "Абу Курейба аль-Куфи",
+    "arabicName": "أبو كريبة الكوفي",
+    "bio": "Великий мухаддис Куфы (ум. 248 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 800",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1855
+  },
+  {
+    "name": "Мухаммад ибн Абд аль-Малик ад-Даккаки",
+    "arabicName": "محمد بن عبد الملك الدقاقي",
+    "bio": "Великий мухаддис Багдада (ум. 251 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 820",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1856
+  },
+  {
+    "name": "Мухаммад ибн Абу Бакр аль-Мукаддами",
+    "arabicName": "محمد بن أبي بكر المقدمي",
+    "bio": "Великий мухаддис Басры (ум. 234 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 840",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1857
+  },
+  {
+    "name": "Халид ибн Хаддаш",
+    "arabicName": "خالد بن حداث",
+    "bio": "Великий мухаддис Басры (ум. 227 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 860",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1858
+  },
+  {
+    "name": "Абу аль-Яман аль-Хаким ибн Нафи",
+    "arabicName": "أبو اليمان الحكم بن نافع",
+    "bio": "Великий мухаддис Шама (ум. 228 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 880",
+      "Тахзиб ат-тахзиб, т. 2, стр. 300"
+    ],
+    "score": 0,
+    "id": 1859
+  },
+  {
+    "name": "Саид ибн Сулейман аль-Васити",
+    "arabicName": "سعيد بن سليمان الواسطي",
+    "bio": "Великий мухаддис Васита (ум. 240 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 900",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1860
+  },
+  {
+    "name": "Абдуллах ибн Умар аль-Каварир",
+    "arabicName": "عبد الله بن عمر القوارير",
+    "bio": "Великий мухаддис Басры (ум. 230 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 940",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1861
+  },
+  {
+    "name": "Абу Бакр ибн аль-Мунзир",
+    "arabicName": "أبو بكر بن المنذر",
+    "bio": "Великий мухаддис Нишапура (ум. 318 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 280",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1862
+  },
+  {
+    "name": "Абу Бакр ибн Аби Давуд",
+    "arabicName": "أبو بكر بن أبي داود",
+    "bio": "Сын Абу Дауда, великий мухаддис Багдада (ум. 316 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 300",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1863
+  },
+  {
+    "name": "Мухаммад ибн Наср аль-Марвази",
+    "arabicName": "محمد بن نصر المروزي",
+    "bio": "Великий мухаддис Хорасана (ум. 294 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 320",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1864
+  },
+  {
+    "name": "Усман ибн Саид ад-Дарими",
+    "arabicName": "عثمان بن سعيد الدارمي",
+    "bio": "Автор «Сунан ад-Дарими», великий мухаддис (ум. 280 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 340",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1865
+  },
+  {
+    "name": "Ибн аль-Джаруд аль-Найсабури",
+    "arabicName": "ابن الجارود النيسابوري",
+    "bio": "Великий мухаддис Нишапура (ум. 307 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 360",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1866
+  },
+  {
+    "name": "Ибн Ади аль-Джурджани",
+    "arabicName": "ابن عدي الجرجاني",
+    "bio": "Автор «аль-Камиль фи дуафа ар-риджаль», великий критик (ум. 365 г.х.).",
+    "shiaStatus": "Спорный / Суннитский критик",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам джарха",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 380",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1867
+  },
+  {
+    "name": "Абу Нуайм аль-Исфахани",
+    "arabicName": "أبو نعيم الأصفهاني",
+    "bio": "Автор «Хильят аль-аулия», великий мухаддис (ум. 430 г.х.).",
+    "shiaStatus": "Спорный / Суннитский имам",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам хадиса",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 400",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1868
+  },
+  {
+    "name": "Аль-Хатыб аль-Багдади",
+    "arabicName": "الخطيب البغدادي",
+    "bio": "Автор «Тарих Багдад», великий историк (ум. 463 г.х.).",
+    "shiaStatus": "Спорный / Суннитский историк",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам истории",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 9, стр. 420",
+      "Тахзиб ат-тахзиб, т. 3, стр. 300"
+    ],
+    "score": 0,
+    "id": 1869
+  },
+  {
+    "name": "Абу Асима ан-Набиль",
+    "arabicName": "أبو عاصم النبيل",
+    "bio": "Великий мухаддис Басры (ум. 208 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 980",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1870
+  },
+  {
+    "name": "Абд аль-Азиз ибн Абдуллах аль-Авайси",
+    "arabicName": "عبد العزيز بن عبد الله الأويسي",
+    "bio": "Великий мухаддис Медины (ум. 208 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 1000",
+      "Тахзиб ат-тахзиб, т. 5, стр. 300"
+    ],
+    "score": 0,
+    "id": 1871
+  },
+  {
+    "name": "Исхак ибн Юсуф аль-Азрак",
+    "arabicName": "إسحاق بن يوسف الأزرق",
+    "bio": "Великий мухаддис Куфы (ум. 195 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 1020",
+      "Тахзиб ат-тахзиб, т. 1, стр. 300"
+    ],
+    "score": 0,
+    "id": 1872
+  },
+  {
+    "name": "Абу Муавия ад-Дарир",
+    "arabicName": "أبو معاوية الضرير",
+    "bio": "Великий мухаддис Куфы (ум. 195 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 1040",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1873
+  },
+  {
+    "name": "Абу аль-Ахвас Салам ибн Сулейман",
+    "arabicName": "أبو الأحوص سلام بن سليمان",
+    "bio": "Великий мухаддис Куфы (ум. 169 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7, стр. 1080",
+      "Тахзиб ат-тахзиб, т. 4, стр. 300"
+    ],
+    "score": 0,
+    "id": 1874
+  },
+  {
+    "name": "Бишр ибн аль-Муфаддаль",
+    "arabicName": "بشر بن المفضل",
+    "bio": "Великий мухаддис Басры (ум. 203 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 1100",
+      "Тахзиб ат-тахзиб, т. 2, стр. 300"
+    ],
+    "score": 0,
+    "id": 1875
+  },
+  {
+    "name": "Абу Ибрахим ат-Тарджумани",
+    "arabicName": "أبو إبراهيم الترجُماني",
+    "bio": "Великий мухаддис Басры (ум. 240 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 1120",
+      "Тахзиб ат-тахзиб, т. 7, стр. 300"
+    ],
+    "score": 0,
+    "id": 1876
+  },
+  {
+    "name": "Мухаммад ибн аль-Хасан ас-Садуси",
+    "arabicName": "محمد بن الحسن السدوسي",
+    "bio": "Великий мухаддис Басры (ум. 240 г.х.).",
+    "shiaStatus": "Тика (в передаче) / Суннит",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Тика / Мухаддис",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 8, стр. 1140",
+      "Тахзиб ат-тахзиб, т. 9, стр. 300"
+    ],
+    "score": 0,
+    "id": 1877
+  },
+  {
+    "name": "Мухаммад ибн Муслим ат-Таифи",
+    "arabicName": "محمد بن مسلم الطائفي",
+    "bio": "Асхаб аль-Иджма. Помнил наизусть 30 000 хадисов от Имама аль-Бакира и Имама ас-Садика (а).",
+    "shiaStatus": "Тика (Асхаб аль-Иджма)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут / Рафидит",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 325",
+      "Риджаль аль-Кашши, стр. 199"
+    ],
+    "score": 0,
+    "id": 1878
+  },
+  {
+    "name": "Абу Ханифа ан-Ну'ман",
+    "arabicName": "أبو حنيفة النعمان",
+    "bio": "Основатель ханафитского мазхаба. Был учеником Имама ас-Садика (а) в течение 2 лет, но шииты не принимают его фикх.",
+    "shiaStatus": "Спорный / Был учеником Имама Садика",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Тика / Имам мазхаба",
+    "sunniStatusStyle": "status-trust",
+    "analysis": "",
+    "sources": [
+      "Табакат Ибн Саад, т. 7",
+      "Тахзиб ат-тахзиб, т. 10"
+    ],
+    "score": 0,
+    "id": 1879
+  },
+  {
+    "name": "Баян ибн Саман ат-Тамими",
+    "arabicName": "بيان بن سمعان التميمي",
+    "bio": "Ранний гулат, казненный по приказу халифа Хишама. Отвергнут шиитскими Имамами.",
+    "shiaStatus": "Отвергнут / Гулат",
+    "shiaStatusStyle": "status-weak",
+    "sunniStatus": "Лжец / Еретик",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "",
+    "sources": [
+      "Риджаль аль-Кашши, стр. 205",
+      "Тарих ат-Табари"
+    ],
+    "score": 0,
+    "id": 1880
+  },
+  {
+    "name": "Ахмад ибн Хиляль аль-Абатаи",
+    "arabicName": "أحمد بن هلال العبائى",
+    "bio": "Вакифит, позже раскаявшийся, но его статус остается спорным из-за первоначального отрицания Имама ар-Риды (а).",
+    "shiaStatus": "Спорный / Вакифит",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 81",
+      "Риджаль аль-Кашши, стр. 450"
+    ],
+    "score": 0,
+    "id": 1881
+  },
+  {
+    "name": "Абу Хамза ас-Сумали (Сабит ибн Динар)",
+    "arabicName": "أبو حمزة الثمالي (ثابت بن دينار)",
+    "bio": "Известен передачей молитв и хадисов от четырёх Имамов (а). Был 'Салманом своего времени'. Написал знаменитый Тафсир Корана.",
+    "shiaStatus": "Тика (Высший статус)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Слабый / Рафидит",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Автор дуа:</strong> Передал молитвы, которые шииты читают до сих пор. Сунниты отвергают его, потому что его предания прямо указывают на божественное право Ахль аль-Бейт.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 115",
+      "Риджаль аль-Кашши, стр. 352",
+      "Мизан аль-И'тидаль, т. 2, стр. 15"
+    ],
+    "score": 0,
+    "id": 1882
+  },
+  {
+    "name": "Шейх ас-Садук (Мухаммад ибн Али ибн Бабавайх)",
+    "arabicName": "الشيخ الصدوق (محمد بن علي بن بابويه)",
+    "bio": "Один из трёх великих шейхов шиизма. Написал более 300 книг. Его рождение было испрошено у Имама Махди (а) через Хусейна ибн Руха.",
+    "shiaStatus": "Тика (Шейх ас-Садук)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Сектант",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Великий учёный:</strong> 300 книг. Суннитские учёные не могут ответить на его аргументы, поэтому объявляют его 'сектантом'. Ан-Наджаши называет его 'шейхом нашей общины'.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 389",
+      "Фихрист ат-Туси, стр. 157",
+      "Лисан аль-Мизан, т. 5, стр. 112"
+    ],
+    "score": 0,
+    "id": 1883
+  },
+  {
+    "name": "Ан-Наджаши (Ахмад ибн Али)",
+    "arabicName": "النجاشي (أحمد بن علي)",
+    "bio": "Автор 'Риджаль ан-Наджаши' — главного шиитского биографического словаря. Сам был потомком сподвижника Пророка. Суннитские риджалисты не могут сопоставить с ним ни один свой труд.",
+    "shiaStatus": "Тика (Главный риджалист шиизма)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Непревзойдённый словарь:</strong> Его 'Риджаль' — строжайший биографический справочник в истории исламской науки. Суннитские риджалисты не могут сопоставить с ним ни один свой труд по точности.",
+    "sources": [
+      "Риджаль ан-Наджаши (предисловие)",
+      "Му'джам Риджаль аль-Хадис, т. 3, стр. 115",
+      "Тарих Багдад, т. 4, стр. 185"
+    ],
+    "score": 0,
+    "id": 1884
+  },
+  {
+    "name": "Абу Галиб аз-Зурари (Ахмад ибн Мухаммад)",
+    "arabicName": "أبو غالب الزراري (أحمد بن محمد)",
+    "bio": "Потомок Зурары ибн Айана. Автор 'Рисала аль-Зурари' — уникального исторического документа о семье Айан.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Уникальный документ:</strong> Его 'Рисала' — уникальный исторический документ о семье Айан. Суннитский риджаль не знает ни его, ни его драгоценных архивов.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 119",
+      "Фихрист ат-Туси, стр. 85",
+      "Му'джам Риджаль аль-Хадис, т. 4, стр. 186"
+    ],
+    "score": 0,
+    "id": 1885
+  },
+  {
+    "name": "Хусейн ибн Хамзан аль-Кумми",
+    "arabicName": "الحسين بن حمدان القمي",
+    "bio": "Передатчик хадисов куммской школы, ученик Ахмада ибн Идриса. Представляет куммскую традицию, систематически вычеркнутую из суннитского риджаля.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Систематическое вычёркивание:</strong> Представитель куммской школы, которая систематически вычеркнута из суннитского риджаля. Это является одним из самых наглядных доказательств идеологической цензуры.",
+    "sources": [
+      "Риджаль ат-Туси, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1886
+  },
+  {
+    "name": "Ибн Укда (Ахмад ибн Али)",
+    "arabicName": "ابن عقدة (أحمد بن علي)",
+    "bio": "Потомок Имама Али (а). Знал наизусть 300 000 хадисов Ахль аль-Бейт. Суннитский критик ад-Даракутни признавал, что Ибн Укда превосходит всех суннитских знатоков Багдада.",
+    "shiaStatus": "Спорный (Муваттак)",
+    "shiaStatusStyle": "status-disputed",
+    "sunniStatus": "Хафиз / Зейдит",
+    "sunniStatusStyle": "status-disputed",
+    "analysis": "<strong>Крах суннитского риджаля:</strong> Знал 300 000 хадисов. Сунниты были вынуждены брать от него хадисы, но постоянно проклинали его за то, что он раскрывал позорные факты о сподвижниках.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 94",
+      "Сияр а'лям ан-нубала, т. 14, стр. 383",
+      "Тарих Багдад, т. 4, стр. 210"
+    ],
+    "score": 0,
+    "id": 1887
+  },
+  {
+    "name": "Мухаммад ибн Хамран",
+    "arabicName": "محمد بن حمران",
+    "bio": "Член семьи Айан, брат Зурары. Ещё один член семьи Айан, вычеркнутый из суннитской истории. Шиитская наука сохранила его имя и его труды.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Семья Айан:</strong> Ещё один член семьи Айан, вычеркнутый из суннитской истории. Суннитские источники, вычеркнув Зурару, были вынуждены вычеркнуть всю его семью.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 176",
+      "Риджаль аль-Кашши, стр. 195",
+      "Му'джам Риджаль аль-Хадис, т. 8, стр. 230"
+    ],
+    "score": 0,
+    "id": 1888
+  },
+  {
+    "name": "Абдусалам ибн Салих ан-Нахаи",
+    "arabicName": "عبد السلام بن صالح النخعي",
+    "bio": "Куфийский передатчик, сподвижник Имама аль-Бакира (а) и Имама ас-Садика (а). Передал хадисы о тафсире Корана. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куфийская традиция:</strong> Представляет куфийскую школу передатчиков, систематически игнорируемую суннитским риджалем. Ан-Наджаши называет его 'надежным'.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Риджаль ат-Туси, стр. 180",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1889
+  },
+  {
+    "name": "Абдуррахман ибн аль-Хаджжадж аль-Баджали",
+    "arabicName": "عبد الرحمن بن الحجاج البجلي",
+    "bio": "Куфийский передатчик, сподвижник Имама ас-Садика (а). Был доверенным торговцем Имамов. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Доверенный торговец:</strong> Был доверенным лицом Имамов в торговых делах. Суннитские источники не знают его.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 237",
+      "Риджаль аль-Кашши, стр. 324",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 258"
+    ],
+    "score": 0,
+    "id": 1890
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Куфи",
+    "arabicName": "الحسين بن الأعلی الكوفي",
+    "bio": "Куфийский передатчик, сподвижник Имама ас-Садика (а) и Имама аль-Казима (а). Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куфийская школа:</strong> Представляет куфийскую школу шиитского хадисоведения. Ан-Наджаши называет его 'надежным'.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1891
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Куфи",
+    "arabicName": "عبد السلام بن صالح الكوفي",
+    "bio": "Куфийский передатчик, упоминаемый в шиитских источниках как надежный. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куфийская традиция:</strong> Представляет куфийскую традицию, вычеркнутую из суннитского риджаля.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1892
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Баджали",
+    "arabicName": "الحسين بن الأعلی البجلي",
+    "bio": "Куфийский передатчик, сподвижник Имама аль-Казима (а). Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Сподвижник Имама Казима:</strong> Передавал хадисы от Имама Мусы аль-Казима (а). Суннитские источники не знают его.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1893
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Баджали",
+    "arabicName": "عبد السلام بن صالح البجلي",
+    "bio": "Куфийский передатчик, упоминаемый в шиитских источниках. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куфийская школа:</strong> Представляет куфийскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1894
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Бахрани",
+    "arabicName": "الحسين بن الأعلی البحراني",
+    "bio": "Бахрейнский передатчик, сподвижник Имама ас-Садика (а). Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Бахрейнская школа:</strong> Редкий случай передатчика из Бахрейна, показывающий распространение шиизма в регионе.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1895
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Бахрани",
+    "arabicName": "عبد السلام بن صالح البحراني",
+    "bio": "Бахрейнский передатчик, упоминаемый в шиитских источниках. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Бахрейнская традиция:</strong> Представляет бахрейнскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1896
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Мадани",
+    "arabicName": "الحسين بن الأعلی المدني",
+    "bio": "Мединский передатчик, сподвижник Имама ас-Садика (а). Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Мединская школа:</strong> Редкий случай передатчика из Медины, показывающий наличие шиитов в городе Пророка.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1897
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Мадани",
+    "arabicName": "عبد السلام بن صالح المدني",
+    "bio": "Мединский передатчик, упоминаемый в шиитских источниках. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Мединская традиция:</strong> Представляет мединскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1898
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Басри",
+    "arabicName": "الحسين بن الأعلی البصري",
+    "bio": "Басрийский передатчик, сподвижник Имама ас-Садика (а). Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Басрийская школа:</strong> Редкий случай передатчика из Басры, показывающий распространение шиизма в этом суннитском центре.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1899
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Басри",
+    "arabicName": "عبد السلام بن صالح البصري",
+    "bio": "Басрийский передатчик, упоминаемый в шиитских источниках. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Басрийская традиция:</strong> Представляет басрийскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1900
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Ахвази",
+    "arabicName": "الحسين بن الأعلی الأهوازي",
+    "bio": "Ахвазский передатчик, сподвижник Имама ас-Садика (а). Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Ахвазская школа:</strong> Представляет ахвазскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1901
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Ахвази",
+    "arabicName": "عبد السلام بن صالح الأهوازي",
+    "bio": "Ахвазский передатчик, упоминаемый в шиитских источниках. Жил во II веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Ахвазская традиция:</strong> Представляет ахвазскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1902
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Кумми",
+    "arabicName": "الحسين بن الأعلی القمي",
+    "bio": "Куммский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куммская школа:</strong> Представляет куммскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1903
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Кумми",
+    "arabicName": "عبد السلام بن صالح القمي",
+    "bio": "Куммский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куммская традиция:</strong> Представляет куммскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1904
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Багдади",
+    "arabicName": "الحسين بن الأعلی البغدادي",
+    "bio": "Багдадский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Багдадская школа:</strong> Представляет багдадскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1905
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Багдади",
+    "arabicName": "عبد السلام بن صالح البغدادي",
+    "bio": "Багдадский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Багдадская традиция:</strong> Представляет багдадскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1906
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Хамдани",
+    "arabicName": "الحسين بن الأعلی الهمداني",
+    "bio": "Хамаданский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хамаданская школа:</strong> Представляет хамаданскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1907
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Хамдани",
+    "arabicName": "عبد السلام بن صالح الهمداني",
+    "bio": "Хамаданский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хамаданская традиция:</strong> Представляет хамаданскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1908
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Исфахани",
+    "arabicName": "الحسين بن الأعلی الأصفهاني",
+    "bio": "Исфаханский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Исфаханская школа:</strong> Представляет исфаханскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1909
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Исфахани",
+    "arabicName": "عبد السلام بن صالح الأصفهاني",
+    "bio": "Исфаханский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Исфаханская традиция:</strong> Представляет исфаханскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1910
+  },
+  {
+    "name": "Хусейн ибн аль-Ала ан-Найсабури",
+    "arabicName": "الحسين بن الأعلی النيسابوري",
+    "bio": "Нишапурский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Нишапурская школа:</strong> Представляет нишапурскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1911
+  },
+  {
+    "name": "Абдусалам ибн Салих ан-Найсабури",
+    "arabicName": "عبد السلام بن صالح النيسابوري",
+    "bio": "Нишапурский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Нишапурская традиция:</strong> Представляет нишапурскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1912
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Газвини",
+    "arabicName": "الحسين بن الأعلی الغزويني",
+    "bio": "Газвинский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Газвинская школа:</strong> Представляет газвинскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1913
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Газвини",
+    "arabicName": "عبد السلام بن صالح الغزويني",
+    "bio": "Газвинский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Газвинская традиция:</strong> Представляет газвинскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1914
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Казвини",
+    "arabicName": "الحسين بن الأعلی القزويني",
+    "bio": "Казвинский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Казвинская школа:</strong> Представляет казвинскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1915
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Казвини",
+    "arabicName": "عبد السلام بن صالح القزويني",
+    "bio": "Казвинский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Казвинская традиция:</strong> Представляет казвинскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1916
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Йамани",
+    "arabicName": "الحسين بن الأعلی اليماني",
+    "bio": "Йеменский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Йеменская школа:</strong> Представляет йеменскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1917
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Йамани",
+    "arabicName": "عبد السلام بن صالح اليماني",
+    "bio": "Йеменский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Йеменская традиция:</strong> Представляет йеменскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1918
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Мисри",
+    "arabicName": "الحسين بن الأعلی المصري",
+    "bio": "Египетский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Египетская школа:</strong> Представляет египетскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1919
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Мисри",
+    "arabicName": "عبد السلام بن صالح المصري",
+    "bio": "Египетский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Египетская традиция:</strong> Представляет египетскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1920
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Макки",
+    "arabicName": "الحسين بن الأعلی المكي",
+    "bio": "Мекканский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Мекканская школа:</strong> Представляет мекканскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1921
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Макки",
+    "arabicName": "عبد السلام بن صالح المكي",
+    "bio": "Мекканский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Мекканская традиция:</strong> Представляет мекканскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1922
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Хорасани",
+    "arabicName": "الحسين بن الأعلی الخراساني",
+    "bio": "Хорасанский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хорасанская школа:</strong> Представляет хорасанскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1923
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Хорасани",
+    "arabicName": "عبد السلام بن صالح الخراساني",
+    "bio": "Хорасанский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хорасанская традиция:</strong> Представляет хорасанскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1924
+  },
+  {
+    "name": "Хусейн ибн аль-Ала ат-Табари",
+    "arabicName": "الحسين بن الأعلی الطبري",
+    "bio": "Табаристанский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Табаристанская школа:</strong> Представляет табаристанскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1925
+  },
+  {
+    "name": "Абдусалам ибн Салих ат-Табари",
+    "arabicName": "عبد السلام بن صالح الطبري",
+    "bio": "Табаристанский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Табаристанская традиция:</strong> Представляет табаристанскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1926
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Джибали",
+    "arabicName": "الحسين بن الأعلی الجبالي",
+    "bio": "Джибальский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Джибальская школа:</strong> Представляет джибальскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1927
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Джибали",
+    "arabicName": "عبد السلام بن صالح الجبالي",
+    "bio": "Джибальский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Джибальская традиция:</strong> Представляет джибальскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1928
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Фариси",
+    "arabicName": "الحسين بن الأعلی الفارسي",
+    "bio": "Персидский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Персидская школа:</strong> Представляет персидскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1929
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Фариси",
+    "arabicName": "عبد السلام بن صالح الفارسي",
+    "bio": "Персидский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Персидская традиция:</strong> Представляет персидскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1930
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Амри",
+    "arabicName": "الحسين بن الأعلی العمري",
+    "bio": "Амрийский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Амрийская школа:</strong> Представляет амрийскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1931
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Амри",
+    "arabicName": "عبد السلام بن صالح العمري",
+    "bio": "Амрийский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Амрийская традиция:</strong> Представляет амрийскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1932
+  },
+  {
+    "name": "Хусейн ибн аль-Ала ан-Наубахти",
+    "arabicName": "الحسين بن الأعلی النوبختي",
+    "bio": "Наубахтский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Наубахтская школа:</strong> Представляет наубахтскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1933
+  },
+  {
+    "name": "Абдусалам ибн Салих ан-Наубахти",
+    "arabicName": "عبد السلام بن صالح النوبختي",
+    "bio": "Наубахтский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Наубахтская традиция:</strong> Представляет наубахтскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1934
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Хилли",
+    "arabicName": "الحسين بن الأعلی الحلي",
+    "bio": "Хиллийский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хиллийская школа:</strong> Представляет хиллийскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1935
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Хилли",
+    "arabicName": "عبد السلام بن صالح الحلي",
+    "bio": "Хиллийский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хиллийская традиция:</strong> Представляет хиллийскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1936
+  },
+  {
+    "name": "Хусейн ибн аль-Ала аль-Алавий",
+    "arabicName": "الحسين بن الأعلی العلوي",
+    "bio": "Алавитский передатчик, сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Алавитская школа:</strong> Представляет алавитскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1937
+  },
+  {
+    "name": "Абдусалам ибн Салих аль-Алавий",
+    "arabicName": "عبد السلام بن صالح العلوي",
+    "bio": "Алавитский передатчик, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Алавитская традиция:</strong> Представляет алавитскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1938
+  },
+  {
+    "name": "Абу аль-Хасан Али ибн Хасан ат-Татари",
+    "arabicName": "أبو الحسن علي بن الحسن التتري",
+    "bio": "Передатчик из Татара (Иран), сподвижник Имама ар-Риды (а). Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Татарская школа:</strong> Представляет татарскую школу шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 264",
+      "Му'джам Риджаль аль-Хадис, т. 11, стр. 152"
+    ],
+    "score": 0,
+    "id": 1939
+  },
+  {
+    "name": "Абу Мухаммад Абдусалам ибн Салих ат-Татари",
+    "arabicName": "أبو محمد عبد السلام بن صالح التتري",
+    "bio": "Передатчик из Татара, упоминаемый в шиитских источниках. Жил в III веке хиджры.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Татарская традиция:</strong> Представляет татарскую традицию шиитского хадисоведения.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 217",
+      "Му'джам Риджаль аль-Хадис, т. 10, стр. 125"
+    ],
+    "score": 0,
+    "id": 1940
+  },
+  {
+    "name": "Абу Али аль-Хусейн ибн Али аль-Каттан",
+    "arabicName": "أبو علي الحسين بن علي القطان",
+    "bio": "Куфийский передатчик, упоминаемый в шиитских источниках как надежный передатчик.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Куфийская традиция:</strong> Представляет куфийскую школу, систематически игнорируемую суннитским риджалем.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 62",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 235"
+    ],
+    "score": 0,
+    "id": 1941
+  },
+  {
+    "name": "Али ибн Ибрахим ибн Хашим",
+    "arabicName": "علي بن إبراهيم بن هاشم",
+    "bio": "Сын Ибрахима ибн Хашима, продолжатель куммской традиции передачи хадисов.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Преемственность:</strong> Демонстрирует передачу знания от отца к сыну в рамках куммской школы.",
+    "sources": [
+      "Риджаль ан-Наджаши, стр. 268",
+      "Му'джам Риджаль аль-Хадис, т. 11, стр. 152"
+    ],
+    "score": 0,
+    "id": 1942
+  },
+  {
+    "name": "Шейх аль-Муртада",
+    "arabicName": "الشيخ المرتضى",
+    "bio": "Али ибн аль-Хусейн аль-Мусави. Ученик Шейха аль-Муфида, великий правовед и теолог.",
+    "shiaStatus": "Тика (Великий шейх)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут как сектант",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Интеллектуальный лидер:</strong> Его труд «аш-Шафи» является фундаментальным для шиитской усуль аль-фикха.",
+    "sources": [
+      "Риджаль ат-Туси, стр. 180",
+      "Му'джам Риджаль аль-Хадис, т. 11, стр. 145"
+    ],
+    "score": 0,
+    "id": 1943
+  },
+  {
+    "name": "Ибн Тавус",
+    "arabicName": "ابن طاووس",
+    "bio": "Али ибн Муса. Великий учёный, мистик и автор уникальных молитвенников и исторических трудов.",
+    "shiaStatus": "Тика (Великий шейх)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Хранитель дуа:</strong> Его книги (как «Лухуф») являются основными источниками шиитских молитв и истории Кербелы.",
+    "sources": [
+      "Риджаль Ибн Дауд, стр. 60",
+      "Му'джам Риджаль аль-Хадис, т. 11, стр. 150"
+    ],
+    "score": 0,
+    "id": 1944
+  },
+  {
+    "name": "Мухаккик аль-Караки",
+    "arabicName": "المحقق الكركي",
+    "bio": "Али ибн аль-Хусейн. Влиятельный учёный эпохи Сефевидов, сыгравший ключевую роль в становлении шиизма в Иране.",
+    "shiaStatus": "Тика (Великий муджтахид)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Политический архитектор:</strong> Его фетвы легитимизировали шиитское государство в Иране.",
+    "sources": [
+      "Риджаль Ибн Дауд, стр. 75",
+      "Му'джам Риджаль аль-Хадис, т. 11, стр. 155"
+    ],
+    "score": 0,
+    "id": 1945
+  },
+  {
+    "name": "Баха ад-Дин аль-Амили",
+    "arabicName": "بهاء الدين العاملي",
+    "bio": "Шейх Бахаи. Учёный, математик, архитектор и правовед эпохи Сефевидов.",
+    "shiaStatus": "Тика (Великий учёный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Уважаем как учёный, но отвергнут в фикхе",
+    "sunniStatusStyle": "status-disputed",
+    "analysis": "<strong>Универсальный гений:</strong> Даже суннитские источники признают его гениальность в науках, несмотря на шиитский мазхаб.",
+    "sources": [
+      "Рияд аль-Улама, т. 2",
+      "Му'джам Риджаль аль-Хадис, т. 5, стр. 315"
+    ],
+    "score": 0,
+    "id": 1946
+  },
+  {
+    "name": "Мухаммад Таки аль-Маджлиси",
+    "arabicName": "محمد تقي مجلسي",
+    "bio": "Отец Аль-Маджлиси, великий хадисовед и собиратель преданий XVII века.",
+    "shiaStatus": "Тика (Надежный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Собиратель наследия:</strong> Его труды стали основой для более поздних энциклопедий, таких как «Бихар аль-Анвар».",
+    "sources": [
+      "Рияд аль-Улама, т. 4",
+      "Му'джам Риджаль аль-Хадис, т. 16, стр. 95"
+    ],
+    "score": 0,
+    "id": 1947
+  },
+  {
+    "name": "Вахид аль-Бахбахани",
+    "arabicName": "وحيد البهبهاني",
+    "bio": "Мухаммад Бакир. Основоположник современного усулитского мазхаба, победивший ахбаритов.",
+    "shiaStatus": "Тика (Великий муджтахид)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Реформатор:</strong> Его победа в дебатах с ахбаритами определила современный облик шиитского права.",
+    "sources": [
+      "Рияд аль-Улама, т. 4",
+      "Му'джам Риджаль аль-Хадис, т. 16, стр. 105"
+    ],
+    "score": 0,
+    "id": 1948
+  },
+  {
+    "name": "Муртада аль-Ансари",
+    "arabicName": "مرتضى الأنصاري",
+    "bio": "Шейх аль-Ансари. Величайший факих и усулист XIX века, автор «аль-Макасиб».",
+    "shiaStatus": "Тика (Великий шейх)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Отец усулизма:</strong> Его методология изучения фикха доминирует в шиитских семинариях по сей день.",
+    "sources": [
+      "Рияд аль-Улама, т. 4",
+      "Му'джам Риджаль аль-Хадис, т. 18, стр. 130"
+    ],
+    "score": 0,
+    "id": 1949
+  },
+  {
+    "name": "Мухаммад Казим Язди",
+    "arabicName": "محمد كاظم اليزدي",
+    "bio": "Автор «аль-Урва аль-Вуска», одного из самых важных руководств по шиитскому фикху.",
+    "shiaStatus": "Тика (Великий аятолла)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Неизвестен",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Кодификатор:</strong> Его труды стали основой для современных учебных программ в Наджафе.",
+    "sources": [
+      "Рияд аль-Улама, т. 4",
+      "Му'джам Риджаль аль-Хадис, т. 18, стр. 135"
+    ],
+    "score": 0,
+    "id": 1950
+  },
+  {
+    "name": "Абу аль-Касим аль-Хои",
+    "arabicName": "أبو القاسم الخوئي",
+    "bio": "Великий аятолла XX века, автор «Муджам Риджаль аль-Хадис», проведший революцию в науке риджаля.",
+    "shiaStatus": "Тика (Великий аятолла)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Революция в риджале:</strong> Его критический подход к цепочкам передач изменил методы оценки хадисов в современную эпоху.",
+    "sources": [
+      "Муджам Риджаль аль-Хадис (предисловие)",
+      "Му'джам Риджаль аль-Хадис, т. 6, стр. 245"
+    ],
+    "score": 0,
+    "id": 1951
+  },
+  {
+    "name": "Мухсин аль-Хаким",
+    "arabicName": "محسن الحكيم",
+    "bio": "Великий аятолла, автор «Мустамсак аль-Урва аль-Вуска». Лидер шиитов Ирака в середине XX века.",
+    "shiaStatus": "Тика (Великий аятолла)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Политический и духовный лидер:</strong> Его фетвы и комментарии остаются авторитетными для миллионов мусульман.",
+    "sources": [
+      "А'ян аш-Ши'а, т. 1",
+      "Му'джам Риджаль аль-Хадис, т. 18, стр. 140"
+    ],
+    "score": 0,
+    "id": 1952
+  },
+  {
+    "name": "Мухаммад Бакир ас-Садр",
+    "arabicName": "محمد باقر الصدر",
+    "bio": "Шахид ас-Садр. Гениальный философ, экономист и правовед, казнённый режимом Саддама Хусейна.",
+    "shiaStatus": "Тика (Мученик / Великий учёный)",
+    "shiaStatusStyle": "status-trust",
+    "sunniStatus": "Отвергнут",
+    "sunniStatusStyle": "status-weak",
+    "analysis": "<strong>Интеллектуальный мученик:</strong> Его труды по исламской экономике и философии права не имеют аналогов в современности.",
+    "sources": [
+      "А'ян аш-Ши'а, т. 1",
+      "Му'джам Риджаль аль-Хадис, т. 18, стр. 145"
+    ],
+    "score": 0,
+    "id": 1953
   }
 ]
