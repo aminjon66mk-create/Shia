@@ -14,7 +14,7 @@
 
 <style>
 /* ═══════════════════════════════════════
-   DESIGN TOKENS
+   DESIGN TOKРУS
 ═══════════════════════════════════════ */
 :root {
   --ink: #080c14;
@@ -706,7 +706,7 @@ html[lang="ar"] .tx-fav { right: auto; left: 10px; }
 .empty-state p { font-size: 14px; }
 
 /* ═══════════════════════════════════════
-   MAIN CONTENT
+   MAIN CONTРУT
 ═══════════════════════════════════════ */
 .content {
   flex: 1;
@@ -715,7 +715,7 @@ html[lang="ar"] .tx-fav { right: auto; left: 10px; }
   position: relative;
 }
 
-/* Welcome screen */
+/* Добро пожаловать screen */
 .welcome {
   display: flex;
   flex-direction: column;
@@ -1267,7 +1267,7 @@ html[lang="ar"] .analysis-box {
   /* Source items larger */
   .src-item { font-size: 13px; padding: 10px 12px; }
 
-  /* Compare selects stack */
+  /* Сравнение selects stack */
   .cmp-selects { grid-template-columns: 1fr; }
 
   /* Kbd hint hidden on mobile */
@@ -1874,7 +1874,7 @@ body.light-theme .bio-box, body.light-theme .analysis-box { background: var(--in
 .geo-tx-dot.status-disputed { background: #fbbf24; }
 
 /* ═══════════════════════════════════════
-   GENEALOGY TREE
+   GРУEALOGY TREE
 ═══════════════════════════════════════ */
 .gen-root {
   margin-bottom: 24px;
@@ -2396,6 +2396,283 @@ html[lang="fa"] .det-top { flex-direction: row-reverse; }
   .wallet-copy { opacity: 1; }
 }
 
+
+/* ═══════════════════════════════════════
+   RUSSIAN-ONLY UI + EXTRA ANIMATIONS
+═══════════════════════════════════════ */
+.lang-toggle { display: none !important; }
+
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(13,148,136,.10), transparent 22%),
+    radial-gradient(circle at 80% 10%, rgba(217,119,6,.10), transparent 20%),
+    radial-gradient(circle at 50% 90%, rgba(225,29,72,.08), transparent 18%),
+    linear-gradient(135deg, #080c14 0%, #0b1220 45%, #06070b 100%);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  animation: bgDrift 18s ease-in-out infinite alternate;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: -30%;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(94,234,212,.08), transparent 18%),
+    radial-gradient(circle at 70% 30%, rgba(217,119,6,.06), transparent 16%),
+    radial-gradient(circle at 50% 70%, rgba(225,29,72,.05), transparent 18%);
+  filter: blur(28px);
+  opacity: .8;
+  animation: ambientShift 22s ease-in-out infinite alternate;
+  transform: translate3d(0,0,0);
+}
+
+.app-header,
+.action-bar,
+.sidebar,
+.content,
+.card,
+.status-card,
+.bio-box,
+.analysis-box,
+.tx-item,
+.filter-chip,
+.btn-icon,
+.btn-quick,
+.action-btn,
+.det-header,
+.welcome-emblem {
+  will-change: transform, opacity, box-shadow;
+}
+
+.app-header {
+  backdrop-filter: blur(12px);
+  animation: topSlideIn .6s ease both;
+}
+.action-bar {
+  animation: topSlideIn .7s ease both;
+}
+.sidebar {
+  animation: slideInLeft .7s cubic-bezier(.2,.8,.2,1) both;
+}
+.content {
+  animation: fadeScaleIn .75s cubic-bezier(.2,.8,.2,1) both;
+}
+.card,
+.panel-box,
+.status-card,
+.bio-box,
+.analysis-box,
+.geo-city-card,
+.note-card,
+.gloss-item,
+.method-card,
+.conflict-item,
+.method-card,
+.isnad-link,
+.quiz-option {
+  animation: softRise .45s ease both;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+.card:hover,
+.status-card:hover,
+.bio-box:hover,
+.analysis-box:hover,
+.geo-city-card:hover,
+.note-card:hover,
+.gloss-item:hover,
+.method-card:hover,
+.conflict-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+
+.tx-item {
+  animation: itemEnter .25s ease both;
+}
+.tx-item:hover {
+  transform: translateX(3px);
+}
+html[lang="ar"] .tx-item:hover {
+  transform: translateX(-3px);
+}
+
+.filter-chip,
+.btn-quick,
+.action-btn,
+.btn-icon,
+.lang-btn,
+.tab-btn,
+.sort-opt,
+.btn-copy-card,
+.btn-quick,
+.btn-quick,
+.quiz-option,
+.epoch-chip,
+.sect-chip,
+.cmp-btn {
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border-color .15s ease, color .15s ease, opacity .15s ease;
+}
+.filter-chip:hover,
+.btn-quick:hover,
+.action-btn:hover,
+.btn-icon:hover,
+.sort-opt:hover,
+.btn-copy-card:hover,
+.quiz-option:hover,
+.epoch-chip:hover,
+.sect-chip:hover,
+.cmp-btn:hover {
+  transform: translateY(-1px) scale(1.01);
+}
+.filter-chip.active,
+.action-btn.active,
+.tab-btn.active {
+  box-shadow: 0 0 0 1px rgba(94,234,212,.18), 0 0 24px rgba(13,148,136,.08);
+}
+
+.det-name,
+.det-arabic,
+.welcome h2,
+.app-title,
+.ws-num {
+  text-shadow: 0 0 18px rgba(13,148,136,.05);
+}
+
+.det-header::before,
+.section .sec-title::after,
+.section .sec-title::before {
+  animation: lineGlow 4.5s ease-in-out infinite alternate;
+}
+
+.bio-box,
+.analysis-box,
+.status-card {
+  position: relative;
+  overflow: hidden;
+}
+.bio-box::after,
+.analysis-box::after,
+.status-card::after,
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.02) 45%, transparent 70%);
+  transform: translateX(-120%);
+  animation: sweep 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.welcome-emblem {
+  animation: pulse 3s ease-in-out infinite, floatY 5s ease-in-out infinite;
+}
+
+.loading-emblem {
+  animation: emblemPulse 1.5s ease-in-out infinite, floatY 4s ease-in-out infinite;
+}
+
+.btn-icon:hover svg,
+.action-btn:hover svg,
+.btn-quick:hover svg {
+  filter: drop-shadow(0 0 8px rgba(94,234,212,.35));
+}
+
+.toast {
+  animation: toastIn .25s ease, toastOut .3s ease 2.5s forwards, toastGlow 2.6s ease both;
+}
+
+.sec-title {
+  position: relative;
+}
+.sec-title::after {
+  background: linear-gradient(90deg, rgba(255,255,255,.12), rgba(94,234,212,.45), rgba(255,255,255,.12));
+  background-size: 200% 100%;
+  animation: shimmerLine 3.5s linear infinite;
+}
+
+.search-input:focus,
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+select:focus {
+  transform: translateY(-1px);
+}
+
+#fxLayer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.fx-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(94,234,212,.9) 0%, rgba(13,148,136,.25) 45%, transparent 70%);
+  filter: blur(.5px);
+  opacity: .0;
+  animation: floatParticle linear infinite;
+}
+
+@keyframes bgDrift {
+  0% { filter: hue-rotate(0deg) saturate(1); }
+  100% { filter: hue-rotate(8deg) saturate(1.1); }
+}
+@keyframes ambientShift {
+  0% { transform: translate3d(-1%, -1%, 0) scale(1); opacity: .65; }
+  100% { transform: translate3d(1%, 1%, 0) scale(1.05); opacity: .95; }
+}
+@keyframes topSlideIn {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeScaleIn {
+  from { opacity: 0; transform: scale(.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes softRise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes itemEnter {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes floatY {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes sweep {
+  0%, 55% { transform: translateX(-120%); opacity: 0; }
+  60% { opacity: 1; }
+  100% { transform: translateX(120%); opacity: 0; }
+}
+@keyframes lineGlow {
+  0% { opacity: .35; }
+  100% { opacity: .85; }
+}
+@keyframes toastGlow {
+  0% { box-shadow: 0 0 0 rgba(13,148,136,0); }
+  50% { box-shadow: 0 0 24px rgba(13,148,136,.15); }
+  100% { box-shadow: 0 0 0 rgba(13,148,136,0); }
+}
+@keyframes shimmerLine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+@keyframes floatParticle {
+  0% { opacity: 0; transform: translateY(10vh) translateX(0) scale(.6); }
+  10% { opacity: .7; }
+  100% { opacity: 0; transform: translateY(-110vh) translateX(var(--drift, 0px)) scale(1.2); }
+}
+
 </style>
 
 <style id="academic-archive-theme">
@@ -2490,7 +2767,7 @@ body::before,.welcome-emblem,.loading-emblem{display:none!important;}
 [data-panel="api"],#btnApi,
 [data-panel="random"],#btnRandom,
 [data-panel="isnad"],#btnIsnad,
-[data-panel="quiz"],#btnQuiz,
+[data-panel="quiz"],#btnТест,
 [data-panel="conflicts"],#btnConflicts,
 [data-panel="geography"],#btnGeography{
  display:none!important;
@@ -2575,7 +2852,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 </div>
 
 
-<!-- Loading -->
+<!-- Загрузка -->
 <div class="loading-overlay" id="loading">
   <div class="loading-emblem">ر</div>
   <div class="loading-bar"></div>
@@ -2614,10 +2891,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     </button>
     <div class="lang-toggle">
       <button class="lang-btn active" data-lang="ru" title="Русский язык">РУ</button>
-      <button class="lang-btn" data-lang="ar" title="العربية">عربي</button>
-      <button class="lang-btn" data-lang="en" title="English">EN</button>
-      <button class="lang-btn" data-lang="fa" title="فارسی">FA</button>
-      <button class="lang-btn" data-lang="az" title="Azərbaycan dili">AZ</button>
+      
     </div>
   </div>
 </header>
@@ -2650,7 +2924,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
       <span class="action-label">Статистика</span>
     </button>
-    <button class="action-btn" id="btnCompare" title="Сравнить двух передатчиков">
+    <button class="action-btn" id="btnСравнение" title="Сравнить двух передатчиков">
       <div class="action-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="12" y1="3" x2="12" y2="21"/><polyline points="17 8 12 3 7 8"/><polyline points="7 16 12 21 17 16"/>
@@ -2658,7 +2932,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
       <span class="action-label">Сравнение</span>
     </button>
-    <button class="action-btn" id="btnTimeline" title="Хронология">
+    <button class="action-btn" id="btnХронология" title="Хронология">
       <div class="action-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
@@ -2666,7 +2940,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
       <span class="action-label">Хронология</span>
     </button>
-    <button class="action-btn" id="btnGlossary" title="Глоссарий терминов">
+    <button class="action-btn" id="btnГлоссарий" title="Глоссарий терминов">
       <div class="action-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
@@ -2691,7 +2965,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
       <span class="action-label">Рейтинг</span>
     </button>
-    <button class="action-btn" id="btnQuiz" title="Викторина">
+    <button class="action-btn" id="btnТест" title="Викторина">
       <div class="action-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"/>
@@ -2716,7 +2990,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
       <span class="action-label">Методология</span>
     </button>
-    <button class="action-btn" id="btnNotes" title="Личные заметки">
+    <button class="action-btn" id="btnЗаметки" title="Личные заметки">
       <div class="action-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
@@ -2749,11 +3023,11 @@ document.addEventListener("DOMContentLoaded",()=>{
 <!-- Tab Bar (mobile) -->
 <nav class="tab-bar" id="tabBar" role="tablist">
   <div class="tab-bar-inner">
-    <button class="tab-btn active" id="tabList" role="tab" aria-selected="true">
+    <button class="tab-btn active" id="tabСписок" role="tab" aria-selected="true">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
       </svg>
-      <span id="tabListLabel">Список</span>
+      <span id="tabСписокLabel">Список</span>
     </button>
     <button class="tab-btn" id="tabDetail" role="tab" aria-selected="false" style="position:relative;">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -2790,10 +3064,10 @@ document.addEventListener("DOMContentLoaded",()=>{
 
       <!-- Filters -->
       <div class="filter-bar" id="filterBar">
-        <button class="filter-chip active" data-filter="all" id="filterAll">—</button>
+        <button class="filter-chip active" data-filter="all" id="filterВсе">—</button>
         <button class="filter-chip" data-filter="trust" id="filterTrust">—</button>
-        <button class="filter-chip" data-filter="disputed" id="filterDisputed">—</button>
-        <button class="filter-chip" data-filter="weak" id="filterWeak">—</button>
+        <button class="filter-chip" data-filter="disputed" id="filterСпорный">—</button>
+        <button class="filter-chip" data-filter="weak" id="filterСлабый">—</button>
       </div>
 
       <!-- Epoch filter -->
@@ -2825,7 +3099,7 @@ document.addEventListener("DOMContentLoaded",()=>{
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <span id="favLabel">—</span>
         </button>
-        <button class="btn-quick" id="btnShowAll">
+        <button class="btn-quick" id="btnShowВсе">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           <span id="allLabel">—</span>
         </button>
@@ -2843,21 +3117,21 @@ document.addEventListener("DOMContentLoaded",()=>{
       </button>
     </div>
 
-    <!-- List -->
-    <ul class="transmitter-list" id="txList" role="listbox"></ul>
+    <!-- Список -->
+    <ul class="transmitter-list" id="txСписок" role="listbox"></ul>
   </aside>
 
   <!-- Content -->
   <main class="content" id="content">
-    <!-- Back button (mobile) -->
-    <button class="btn-back" id="btnBack">
+    <!-- Назад button (mobile) -->
+    <button class="btn-back" id="btnНазад">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
         <polyline points="15 18 9 12 15 6"/>
       </svg>
       <span id="backLabel">—</span>
     </button>
 
-    <!-- Welcome -->
+    <!-- Добро пожаловать -->
     <div class="welcome" id="welcome">
       <div class="welcome-emblem">ر</div>
       <h2 id="welcomeTitle">—</h2>
@@ -2956,8 +3230,8 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
       <div class="welcome-quick">
         <button class="welcome-quick-btn" onclick="document.getElementById('btnRandom').click()">🎲 Случайный передатчик</button>
-        <button class="welcome-quick-btn" onclick="document.getElementById('btnGlossary').click()">📖 Глоссарий</button>
-        <button class="welcome-quick-btn" onclick="document.getElementById('btnQuiz').click()">🎓 Викторина</button>
+        <button class="welcome-quick-btn" onclick="document.getElementById('btnГлоссарий').click()">📖 Глоссарий</button>
+        <button class="welcome-quick-btn" onclick="document.getElementById('btnТест').click()">🎓 Викторина</button>
         <button class="welcome-quick-btn" onclick="document.getElementById('btnStats').click()">📊 Статистика</button>
       </div>
     </div>
@@ -3015,7 +3289,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       <div class="panel-title">📖 Глоссарий терминов ар-Риджаль</div>
       <button class="panel-close" id="glossaryClose">✕</button>
     </div>
-    <div class="gloss-list" id="glossaryList"></div>
+    <div class="gloss-list" id="glossaryСписок"></div>
   </div>
 </div>
 
@@ -3096,7 +3370,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       <button class="cmp-btn" id="notesSave" style="margin-bottom:0">💾 Сохранить заметку</button>
       <button class="cmp-btn" id="notesClear" style="margin-bottom:0;background:var(--ink-3);color:var(--text-2)">🗑 Очистить</button>
     </div>
-    <div id="notesList" style="margin-top:20px;display:flex;flex-direction:column;gap:8px"></div>
+    <div id="notesСписок" style="margin-top:20px;display:flex;flex-direction:column;gap:8px"></div>
   </div>
 </div>
 
@@ -3127,11 +3401,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     </div>
     <p style="font-size:13px;color:var(--text-2);margin-bottom:16px;line-height:1.6">Распределение передатчиков по основным историческим центрам исламской учёности. Нажмите на город, чтобы увидеть связанных с ним передатчиков.</p>
     <div id="geographyMap" style="margin-bottom:16px"></div>
-    <div id="geographyCityList"></div>
+    <div id="geographyCityСписок"></div>
   </div>
 </div>
 
-<!-- GENEALOGY PANEL -->
+<!-- GРУEALOGY PANEL -->
 <div class="panel-overlay" id="genealogyPanel">
   <div class="panel-box" style="width:min(820px,96vw)">
     <div class="panel-head">
@@ -3166,14 +3440,14 @@ const i18n = {
     appTitle: 'Ильм ар-Риджаль',
     appSubtitle: 'Сравнительный критический анализ передатчиков',
     searchPlaceholder: 'Поиск передатчика...',
-    filterAll: 'Все',
+    filterВсе: 'Все',
     filterTrust: 'Надёжный',
-    filterDisputed: 'Спорный',
-    filterWeak: 'Слабый',
+    filterСпорный: 'Спорный',
+    filterСлабый: 'Слабый',
     favLabel: 'Избранное',
     allLabel: 'Все записи',
     backLabel: 'Назад',
-    tabListLabel: 'Список',
+    tabСписокLabel: 'Список',
     tabDetailLabel: 'Карточка',
     statsOf: (n, t) => `<strong>${n}</strong> из ${t} передатчиков`,
     welcomeTitle: 'Аналитическая База Данных Науки ар-Риджаль',
@@ -3202,14 +3476,14 @@ const i18n = {
     appTitle: 'علم الرجال',
     appSubtitle: 'تحليل نقدي مقارن للرواة',
     searchPlaceholder: 'ابحث عن راوٍ...',
-    filterAll: 'الكل',
+    filterВсе: 'الكل',
     filterTrust: 'ثقة',
-    filterDisputed: 'مختلف فيه',
-    filterWeak: 'ضعيف',
+    filterСпорный: 'مختلف فيه',
+    filterСлабый: 'ضعيف',
     favLabel: 'المفضلة',
     allLabel: 'جميع السجلات',
     backLabel: 'رجوع',
-    tabListLabel: 'القائمة',
+    tabСписокLabel: 'القائمة',
     tabDetailLabel: 'البطاقة',
     statsOf: (n, t) => `<strong>${n}</strong> من ${t} راوٍ`,
     welcomeTitle: 'قاعدة بيانات تحليلية لعلم الرجال',
@@ -3237,16 +3511,16 @@ const i18n = {
   en: {
     appTitle: 'Ilm al-Rijal',
     appSubtitle: 'Comparative critical analysis of hadith transmitters',
-    searchPlaceholder: 'Search transmitter...',
-    filterAll: 'All',
-    filterTrust: 'Reliable',
-    filterDisputed: 'Disputed',
-    filterWeak: 'Weak',
-    favLabel: 'Favorites',
-    allLabel: 'All records',
-    backLabel: 'Back',
-    tabListLabel: 'List',
-    tabDetailLabel: 'Profile',
+    searchPlaceholder: 'Поиск передатчика...',
+    filterВсе: 'Все',
+    filterTrust: 'Надёжный',
+    filterСпорный: 'Спорный',
+    filterСлабый: 'Слабый',
+    favLabel: 'Избранное',
+    allLabel: 'Все records',
+    backLabel: 'Назад',
+    tabСписокLabel: 'Список',
+    tabDetailLabel: 'Карточка',
     statsOf: (n, t) => `<strong>${n}</strong> of ${t} transmitters`,
     welcomeTitle: 'Analytical Database of Ilm al-Rijal',
     welcomeDesc: 'Critical analysis of hadith transmitters in the Shia and Sunni traditions. Select a transmitter from the list to view the full analysis.',
@@ -3266,22 +3540,22 @@ const i18n = {
     notFound: 'Transmitter not found in the Rijal database',
     detId: (n) => `Record #${n + 1}`,
     randomHint: 'Random transmitter',
-    trust: 'Reliable (Thiqa)',
-    weak: "Weak (Da'if)",
-    disputed: 'Disputed',
+    trust: 'Надёжный (Thiqa)',
+    weak: "Слабый (Da'if)",
+    disputed: 'Спорный',
   },
   fa: {
     appTitle: 'علم الرجال',
     appSubtitle: 'تحلیل انتقادی تطبیقی راویان حدیث',
     searchPlaceholder: 'جستجوی راوی...',
-    filterAll: 'همه',
+    filterВсе: 'همه',
     filterTrust: 'ثقه',
-    filterDisputed: 'مختلف فیه',
-    filterWeak: 'ضعیف',
+    filterСпорный: 'مختلف فیه',
+    filterСлабый: 'ضعیف',
     favLabel: 'علاقه‌مندی‌ها',
     allLabel: 'همه رکوردها',
     backLabel: 'بازگشت',
-    tabListLabel: 'فهرست',
+    tabСписокLabel: 'فهرست',
     tabDetailLabel: 'کارت',
     statsOf: (n, t) => `<strong>${n}</strong> از ${t} راوی`,
     welcomeTitle: 'پایگاه داده تحلیلی علم الرجال',
@@ -3310,14 +3584,14 @@ const i18n = {
     appTitle: 'Elm ər-Rical',
     appSubtitle: 'Hədis ravilərinin müqayisəli tənqidi təhlili',
     searchPlaceholder: 'Ravi axtar...',
-    filterAll: 'Hamısı',
+    filterВсе: 'Hamısı',
     filterTrust: 'Etibarlı',
-    filterDisputed: 'Mübahisəli',
-    filterWeak: 'Zəif',
+    filterСпорный: 'Mübahisəli',
+    filterСлабый: 'Zəif',
     favLabel: 'Seçilmişlər',
     allLabel: 'Bütün qeydlər',
     backLabel: 'Geri',
-    tabListLabel: 'Siyahı',
+    tabСписокLabel: 'Siyahı',
     tabDetailLabel: 'Kart',
     statsOf: (n, t) => `<strong>${n}</strong> / ${t} ravi`,
     welcomeTitle: 'Elm ər-Rical Analitik Verilənlər Bazası',
@@ -3350,18 +3624,18 @@ function switchTab(tab) {
   if (!isMobile) return;
   const sidebar = $('sidebar');
   const content = $('content');
-  const btnList = $('tabList');
+  const btnСписок = $('tabСписок');
   const btnDetail = $('tabDetail');
   if (tab === 'list') {
     sidebar.classList.add('tab-active');
     content.classList.remove('tab-active');
-    if (btnList) btnList.classList.add('active');
+    if (btnСписок) btnСписок.classList.add('active');
     if (btnDetail) btnDetail.classList.remove('active');
   } else {
     content.classList.add('tab-active');
     sidebar.classList.remove('tab-active');
     if (btnDetail) btnDetail.classList.add('active');
-    if (btnList) btnList.classList.remove('active');
+    if (btnСписок) btnСписок.classList.remove('active');
   }
   state.activeTab = tab;
 }
@@ -3390,7 +3664,7 @@ let state = {
 const NOTES_KEY = 'rijal_notes_v1';
 let notesStore = {};
 try { notesStore = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}'); } catch(e) {}
-function saveNotesStore() {
+function saveЗаметкиStore() {
   try { localStorage.setItem(NOTES_KEY, JSON.stringify(notesStore)); } catch(e) {}
 }
 
@@ -3403,7 +3677,7 @@ const t = (key, ...args) => {
   return typeof fn === 'function' ? fn(...args) : fn;
 };
 
-function saveSettings() {
+function saveНастройки() {
   try {
     localStorage.setItem('rijal_lang', state.lang);
     localStorage.setItem('rijal_favorites', JSON.stringify([...state.favorites]));
@@ -3411,10 +3685,10 @@ function saveSettings() {
   } catch(e) {}
 }
 
-function loadSettings() {
+function loadНастройки() {
   try {
     const lang = localStorage.getItem('rijal_lang');
-    if (['ru','ar','en','fa','az'].includes(lang)) state.lang = lang;
+    state.lang = 'ru';
     const favs = JSON.parse(localStorage.getItem('rijal_favorites') || '[]');
     state.favorites = new Set(favs);
   } catch(e) {}
@@ -3459,16 +3733,16 @@ function applyLang() {
   $('searchInput').placeholder = t('searchPlaceholder');
 
   // Filter chips
-  $('filterAll').textContent = t('filterAll');
+  $('filterВсе').textContent = t('filterВсе');
   $('filterTrust').textContent = t('filterTrust');
-  $('filterDisputed').textContent = t('filterDisputed');
-  $('filterWeak').textContent = t('filterWeak');
+  $('filterСпорный').textContent = t('filterСпорный');
+  $('filterСлабый').textContent = t('filterСлабый');
 
   // Quick actions
   $('favLabel').textContent = t('favLabel');
   $('allLabel').textContent = t('allLabel');
 
-  // Back btn
+  // Назад btn
   $('backLabel').textContent = t('backLabel');
 
   // Detail labels
@@ -3478,7 +3752,7 @@ function applyLang() {
   $('secAnalysisLabel').textContent = t('secAnalysisLabel');
   $('secSourcesLabel').textContent = t('secSourcesLabel');
 
-  // Welcome
+  // Добро пожаловать
   $('welcomeTitle').textContent = t('welcomeTitle');
   $('welcomeDesc').textContent = t('welcomeDesc');
   $('wsTotalLabel').textContent = t('wsTotalLabel');
@@ -3486,7 +3760,7 @@ function applyLang() {
   $('wsFavLabel').textContent = t('wsFavLabel');
 
   // Tab labels
-  if ($('tabListLabel')) $('tabListLabel').textContent = t('tabListLabel');
+  if ($('tabСписокLabel')) $('tabСписокLabel').textContent = t('tabСписокLabel');
   if ($('tabDetailLabel')) $('tabDetailLabel').textContent = t('tabDetailLabel');
 
   // Action bar labels
@@ -3499,9 +3773,9 @@ function applyLang() {
           tl:'التسلسل', gloss:'المصطلحات', isnad:'الإسناد', rel:'التقييم',
           quiz:'مسابقة', conf:'التناقضات', meth:'المنهج', bar:'أدوات تحليل الرجال',
           epoch:'العصر', sect:'المذهب' },
-    en:  { fav:'Favorites', rand:'Random', stats:'Statistics', cmp:'Compare',
-          tl:'Timeline', gloss:'Glossary', isnad:'Isnad', rel:'Rating',
-          quiz:'Quiz', conf:'Conflicts', meth:'Methodology', bar:'Rijal Analysis Tools',
+    en:  { fav:'Избранное', rand:'Random', stats:'Statistics', cmp:'Сравнение',
+          tl:'Хронология', gloss:'Глоссарий', isnad:'Isnad', rel:'Rating',
+          quiz:'Тест', conf:'Conflicts', meth:'Methodology', bar:'Rijal Analysis Tools',
           epoch:'Epoch', sect:'School' },
     fa:  { fav:'علاقه‌مندی‌ها', rand:'تصادفی', stats:'آمار', cmp:'مقایسه',
           tl:'تسلسل زمانی', gloss:'واژه‌نامه', isnad:'اسناد', rel:'رتبه‌بندی',
@@ -3517,12 +3791,12 @@ function applyLang() {
   const btnFavView = $('btnFavView'); if(btnFavView) btnFavView.querySelector('.action-label').textContent = al.fav;
   const btnRandom  = $('btnRandom');  if(btnRandom)  btnRandom.querySelector('.action-label').textContent  = al.rand;
   const btnStats   = $('btnStats');   if(btnStats)   btnStats.querySelector('.action-label').textContent   = al.stats;
-  const btnCompare = $('btnCompare'); if(btnCompare) btnCompare.querySelector('.action-label').textContent = al.cmp;
-  const btnTimeline= $('btnTimeline');if(btnTimeline)btnTimeline.querySelector('.action-label').textContent= al.tl;
-  const btnGlossary= $('btnGlossary');if(btnGlossary)btnGlossary.querySelector('.action-label').textContent= al.gloss;
+  const btnСравнение = $('btnСравнение'); if(btnСравнение) btnСравнение.querySelector('.action-label').textContent = al.cmp;
+  const btnХронология= $('btnХронология');if(btnХронология)btnХронология.querySelector('.action-label').textContent= al.tl;
+  const btnГлоссарий= $('btnГлоссарий');if(btnГлоссарий)btnГлоссарий.querySelector('.action-label').textContent= al.gloss;
   const btnIsnad   = $('btnIsnad');   if(btnIsnad)   btnIsnad.querySelector('.action-label').textContent   = al.isnad;
   const btnRel     = $('btnReliability');if(btnRel)  btnRel.querySelector('.action-label').textContent    = al.rel;
-  const btnQuiz    = $('btnQuiz');    if(btnQuiz)    btnQuiz.querySelector('.action-label').textContent    = al.quiz;
+  const btnТест    = $('btnТест');    if(btnТест)    btnТест.querySelector('.action-label').textContent    = al.quiz;
   const btnConflict= $('btnConflict');if(btnConflict)btnConflict.querySelector('.action-label').textContent= al.conf;
   const btnHilali  = $('btnHilali');  if(btnHilali)  btnHilali.querySelector('.action-label').textContent  = al.meth;
   // Action bar title
@@ -3534,7 +3808,7 @@ function applyLang() {
   const epochChips = { all:'Hamısı', sahaba:'Səhabə', tabiin:'Tabiin', '2':'II əsr h.', '3':'III əsr h.', '4':'IV əsr h.', '5+':'V+ əsr h.' };
   const epochChipsRu = { all:'Все', sahaba:'Сахабы', tabiin:'Табиины', '2':'II в.х.', '3':'III в.х.', '4':'IV в.х.', '5+':'V+ в.х.' };
   const epochChipsAr = { all:'الكل', sahaba:'الصحابة', tabiin:'التابعون', '2':'القرن الثاني', '3':'القرن الثالث', '4':'القرن الرابع', '5+':'القرن الخامس+' };
-  const epochChipsEn = { all:'All', sahaba:'Companions', tabiin:'Tabiun', '2':'II cent. AH', '3':'III cent. AH', '4':'IV cent. AH', '5+':'V+ cent. AH' };
+  const epochChipsEn = { all:'Все', sahaba:'Companions', tabiin:'Tabiun', '2':'II cent. AH', '3':'III cent. AH', '4':'IV cent. AH', '5+':'V+ cent. AH' };
   const epochChipsFa = { all:'همه', sahaba:'صحابه', tabiin:'تابعین', '2':'قرن دوم', '3':'قرن سوم', '4':'قرن چهارم', '5+':'قرن پنجم+' };
   const eMap = { ru: epochChipsRu, ar: epochChipsAr, en: epochChipsEn, fa: epochChipsFa, az: epochChips };
   const eCur = eMap[state.lang] || epochChipsRu;
@@ -3545,7 +3819,7 @@ function applyLang() {
   const sectMap = {
     ru: { all:'Все', imamit:'Имамиты', nasibi:'Насибиты', ghulat:'Гулаты', wakifi:'Вакифиты', zaydi:'Зейдиты' },
     ar: { all:'الكل', imamit:'الإمامية', nasibi:'الناصبة', ghulat:'الغلاة', wakifi:'الواقفة', zaydi:'الزيدية' },
-    en: { all:'All', imamit:'Imamis', nasibi:'Nasibis', ghulat:'Ghulat', wakifi:'Waqifis', zaydi:'Zaydis' },
+    en: { all:'Все', imamit:'Imamis', nasibi:'Nasibis', ghulat:'Ghulat', wakifi:'Waqifis', zaydi:'Zaydis' },
     fa: { all:'همه', imamit:'امامیه', nasibi:'ناصبیه', ghulat:'غلات', wakifi:'واقفیه', zaydi:'زیدیه' },
     az: { all:'Hamısı', imamit:'İmamilər', nasibi:'Nasibilər', ghulat:'Qulat', wakifi:'Vakifilər', zaydi:'Zeydilər' },
   };
@@ -3584,9 +3858,9 @@ function applyLang() {
     },
     en: {
       statsTitle: '📊 Database Statistics',
-      compareTitle: '⚖ Compare Transmitters',
-      timelineTitle: '🕐 Transmitter Timeline',
-      glossaryTitle: '📖 Rijal Terminology Glossary',
+      compareTitle: '⚖ Сравнение Transmitters',
+      timelineTitle: '🕐 Transmitter Хронология',
+      glossaryTitle: '📖 Rijal Terminology Глоссарий',
       isnadTitle: '⛓ Isnad Analyzer',
       isnadDesc: 'Enter a chain of transmitters separated by commas — the system will evaluate each link.',
       isnadPlaceholder: 'E.g.: Muhammad al-Kulayni, al-Husayn ibn Ubaydullah...',
@@ -3641,7 +3915,7 @@ function applyLang() {
 
   // Update stats
   updateStats();
-  renderList();
+  renderСписок();
 
   // Re-render active detail if any
   if (state.activeId !== null) renderDetail(state.activeId);
@@ -3654,7 +3928,7 @@ function computeFiltered() {
   const q = state.query.toLowerCase().trim();
   let arr = state.data;
 
-  // Favorites mode
+  // Избранное mode
   if (state.showFav) {
     arr = arr.filter(t => state.favorites.has(t.id));
   }
@@ -3739,11 +4013,11 @@ function computeFiltered() {
 }
 
 // ═══════════════════════════════════════
-// RENDER LIST
+// RРУDER LIST
 // ═══════════════════════════════════════
-function renderList() {
+function renderСписок() {
   computeFiltered();
-  const list = $('txList');
+  const list = $('txСписок');
   list.innerHTML = '';
 
   updateStats();
@@ -3822,7 +4096,7 @@ function updateStats() {
   const total = state.data.length;
   $('statsCount').innerHTML = t('statsOf', n, total);
 
-  // Welcome stats
+  // Добро пожаловать stats
   $('wsTotalNum').textContent = total;
   const trustCount = state.data.filter(d => (d.shiaStatusStyle || '').includes('trust')).length;
   $('wsTrustNum').textContent = trustCount;
@@ -3836,7 +4110,7 @@ function selectTransmitter(id) {
   state.activeId = id;
 
   // Highlight active in list
-  $('txList').querySelectorAll('.tx-item').forEach(el => {
+  $('txСписок').querySelectorAll('.tx-item').forEach(el => {
     const selected = parseInt(el.dataset.id) === id;
     el.classList.toggle('active', selected);
     el.setAttribute('aria-selected', selected);
@@ -3848,7 +4122,7 @@ function selectTransmitter(id) {
   }
 
   renderDetail(id);
-  saveSettings();
+  saveНастройки();
 }
 
 // ── Translation cache (persisted) ──────────────────────────────
@@ -3928,14 +4202,14 @@ function translateStatus(s) {
   return STATUS_AR[s.trim()] || s;
 }
 
-// ── Status translations for EN ────────────────────────────────
-const STATUS_EN = {
-  'Тика': 'Reliable (Thiqa)',
-  'Тика, Джалиль': 'Reliable, Eminent',
-  'Тика, Асхаб аль-Иджма': 'Reliable, Ashab al-Ijma',
-  'Тика, Факих': 'Reliable, Jurist',
-  'Спорный': 'Disputed',
-  'Слабый': 'Weak (Daif)',
+// ── Status translations for РУ ────────────────────────────────
+const STATUS_РУ = {
+  'Тика': 'Надёжный (Thiqa)',
+  'Тика, Джалиль': 'Надёжный, Eminent',
+  'Тика, Асхаб аль-Иджма': 'Надёжный, Ashab al-Ijma',
+  'Тика, Факих': 'Надёжный, Jurist',
+  'Спорный': 'Спорный',
+  'Слабый': 'Слабый (Daif)',
   'Слабый (Каззаб)': 'Liar (Kazzab)',
   'Слабый (Маджхуль)': 'Unknown (Majhul)',
   'Не принят': 'Not Accepted',
@@ -3946,12 +4220,12 @@ const STATUS_EN = {
   'Матрук': 'Abandoned (Matruk)',
   'Садук': 'Truthful (Saduq)',
   'Муваттак': 'Confirmed (Muwath-thaq)',
-  'Сахаби / Тика': 'Companion / Reliable',
+  'Сахаби / Тика': 'Companion / Надёжный',
   'Хафиз': 'Hafidh',
   'Шиит': 'Shia',
   'Шиитский поэт': 'Shia Poet',
   'Малоизвестен': 'Little Known',
-  'Крайне слабый': 'Extremely Weak',
+  'Крайне слабый': 'Extremely Слабый',
 };
 
 // ── Status translations for FA ────────────────────────────────
@@ -4047,7 +4321,7 @@ function translateStatusForLang(s, lang) {
   if (!s) return s;
   const key = s.trim();
   if (lang === 'ar') return STATUS_AR[key] || s;
-  if (lang === 'en') return STATUS_EN[key] || s;
+  if (lang === 'en') return STATUS_РУ[key] || s;
   if (lang === 'fa') return STATUS_FA[key] || s;
   if (lang === 'az') return STATUS_AZ[key] || s;
   return s;
@@ -4089,7 +4363,7 @@ ${(tx.sources || []).join('\n')}
 أجب بـ JSON صالح فقط، بدون أي نص خارجه، بهذا الشكل الدقيق:
 {"bio":"النص المترجم","analysis":"التحليل المترجم","sources":["المصدر1","المصدر2"]}`;
   } else if (lang === 'en') {
-    prompt = `You are a specialist scholar in Ilm al-Rijal (hadith narrator criticism). Translate the following Russian text into precise academic English appropriate for Islamic hadith sciences.
+    prompt = `You are a specialist scholar in Ilm al-Rijal (hadith narrator criticism). Translate the following Russian text into precise academic Русский appropriate for Islamic hadith sciences.
 
 Biographical note for narrator «${tx.arabicName || tx.name}»:
 ${tx.bio || '—'}
@@ -4174,13 +4448,13 @@ function showSkeleton() {
   $('detAnalysis').innerHTML = [240,200,220,180,200].map(w=>skEl(w)).join(' ');
   $('scShiaText').innerHTML = skEl(120);
   $('scSunniText').innerHTML = skEl(120);
-  const srcList = $('detSources');
-  srcList.innerHTML = '';
+  const srcСписок = $('detSources');
+  srcСписок.innerHTML = '';
   [160,140].forEach(w => {
     const li = document.createElement('li');
     li.className = 'src-item';
     li.innerHTML = skEl(w);
-    srcList.appendChild(li);
+    srcСписок.appendChild(li);
   });
 }
 
@@ -4253,8 +4527,8 @@ function fillDetail(tx, arData) {
   }
 
   // Sources
-  const srcList = $('detSources');
-  srcList.innerHTML = '';
+  const srcСписок = $('detSources');
+  srcСписок.innerHTML = '';
   if (sources.length) {
     sources.forEach(s => {
       const li = document.createElement('li');
@@ -4265,13 +4539,13 @@ function fillDetail(tx, arData) {
         li.style.textAlign = 'right';
         li.style.fontFamily = 'var(--font-arabic)';
       }
-      srcList.appendChild(li);
+      srcСписок.appendChild(li);
     });
   } else {
     const li = document.createElement('li');
     li.className = 'src-item';
     li.textContent = t('noSources');
-    srcList.appendChild(li);
+    srcСписок.appendChild(li);
   }
 }
 
@@ -4310,8 +4584,8 @@ async function renderDetail(id) {
   const needsTranslation = (state.lang === 'ar' || state.lang === 'en' || state.lang === 'fa' || state.lang === 'az');
 
   if (needsTranslation) {
-    // Loading messages by language
-    const loadingMsg = { ar: 'جارٍ تحميل الترجمة...', en: 'Loading translation...', fa: 'در حال بارگذاری ترجمه...', az: 'Tərcümə yüklənir...' };
+    // Загрузка messages by language
+    const loadingMsg = { ar: 'جارٍ تحميل الترجمة...', en: 'Загрузка translation...', fa: 'در حال بارگذاری ترجمه...', az: 'Tərcümə yüklənir...' };
     const failMsg = { ar: '⚠ تعذّرت الترجمة — النص بالروسية', en: '⚠ Translation failed — showing Russian text', fa: '⚠ ترجمه ناموفق بود — متن روسی نمایش داده می‌شود', az: '⚠ Tərcümə uğursuz oldu — Rus mətn göstərilir' };
 
     // Step 1: instantly show statuses from dict
@@ -4333,7 +4607,7 @@ async function renderDetail(id) {
 
     // Step 3: show skeleton, fetch translation
     showSkeleton();
-    $('detBio').innerHTML = `<span class="ar-loading">${loadingMsg[state.lang] || 'Loading...'}</span>`;
+    $('detBio').innerHTML = `<span class="ar-loading">${loadingMsg[state.lang] || 'Загрузка...'}</span>`;
 
     try {
       const transData = await fetchArabicData(tx);
@@ -4388,19 +4662,19 @@ function closeSidebar() {
 }
 
 // ═══════════════════════════════════════
-// EVENTS
+// EVРУTS
 // ═══════════════════════════════════════
 function initEvents() {
   // Tab bar switching handled by global switchTab
-  $('tabList') && $('tabList').addEventListener('click', () => switchTab('list'));
+  $('tabСписок') && $('tabСписок').addEventListener('click', () => switchTab('list'));
   $('tabDetail') && $('tabDetail').addEventListener('click', () => switchTab('detail'));
 
   // Hamburger (desktop only now, hidden on mobile)
   $('btnMenu').addEventListener('click', openSidebar);
   $('drawerOverlay').addEventListener('click', closeSidebar);
 
-  // Back button (disabled but keep in case)
-  $('btnBack') && $('btnBack').addEventListener('click', () => {
+  // Назад button (disabled but keep in case)
+  $('btnНазад') && $('btnНазад').addEventListener('click', () => {
     switchTab('list');
   });
 
@@ -4408,7 +4682,7 @@ function initEvents() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       state.lang = btn.dataset.lang;
-      saveSettings();
+      saveНастройки();
       applyLang();
     });
   });
@@ -4417,14 +4691,14 @@ function initEvents() {
   $('searchInput').addEventListener('input', (e) => {
     state.query = e.target.value;
     $('searchClear').style.display = state.query ? 'block' : 'none';
-    renderList();
+    renderСписок();
   });
 
   $('searchClear').addEventListener('click', () => {
     $('searchInput').value = '';
     state.query = '';
     $('searchClear').style.display = 'none';
-    renderList();
+    renderСписок();
     $('searchInput').focus();
   });
 
@@ -4434,7 +4708,7 @@ function initEvents() {
       state.filter = chip.dataset.filter;
       document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
-      renderList();
+      renderСписок();
     });
   });
 
@@ -4442,19 +4716,19 @@ function initEvents() {
   $('btnShowFav').addEventListener('click', () => {
     state.showFav = !state.showFav;
     $('btnShowFav').classList.toggle('fav-active', state.showFav);
-    renderList();
+    renderСписок();
   });
 
   // Show all
-  $('btnShowAll').addEventListener('click', () => {
+  $('btnShowВсе').addEventListener('click', () => {
     state.showFav = false;
     state.filter = 'all';
     state.query = '';
     $('searchInput').value = '';
     $('searchClear').style.display = 'none';
     document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-    $('filterAll').classList.add('active');
-    renderList();
+    $('filterВсе').classList.add('active');
+    renderСписок();
   });
 
   // Random
@@ -4465,7 +4739,7 @@ function initEvents() {
     selectTransmitter(tx.id);
     // Scroll to item in list
     setTimeout(() => {
-      const el = $('txList').querySelector(`[data-id="${tx.id}"]`);
+      const el = $('txСписок').querySelector(`[data-id="${tx.id}"]`);
       if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }, 100);
     if (window.innerWidth <= 768) {
@@ -4478,7 +4752,7 @@ function initEvents() {
     state.showFav = !state.showFav;
     $('btnFavView').classList.toggle('active', state.showFav);
     $('btnShowFav').classList.toggle('fav-active', state.showFav);
-    renderList();
+    renderСписок();
     if (window.innerWidth <= 768) switchTab('list');
   });
 
@@ -4494,8 +4768,8 @@ function initEvents() {
     }
     updateFavBtn();
     updateStats();
-    renderList();
-    saveSettings();
+    renderСписок();
+    saveНастройки();
   });
 
   // Keyboard
@@ -4513,34 +4787,35 @@ function initEvents() {
 // INIT
 // ═══════════════════════════════════════
 async function init() {
-  loadSettings();
+  loadНастройки();
   applyLang();
 
-  // Load data from transmitters.json + transmitters2.json (если есть)
+  // Load data from transmitters.json + transmitters2/3/4.json (если есть)
   let raw = [];
   try {
-    const res1 = await fetch('transmitters.json');
-    if (!res1.ok) throw new Error('HTTP ' + res1.status);
-    const data1 = await res1.json();
-
-    // Пробуем загрузить вторую базу — если нет файла, просто пропускаем
-    let data2 = [];
-    try {
-      const res2 = await fetch('transmitters2.json');
-      if (res2.ok) {
-        data2 = await res2.json();
+    const loadJsonIfExists = async (filename) => {
+      try {
+        const res = await fetch(filename);
+        if (!res.ok) return [];
+        return await res.json();
+      } catch (err) {
+        console.info(`${filename} не найден или не удалось загрузить`);
+        return [];
       }
-    } catch(e2) {
-      console.info('transmitters2.json не найден — загружена только основная база');
-    }
+    };
 
-    // Объединяем
-    raw = [...data1, ...data2];
+    const data1 = await loadJsonIfExists('transmitters.json');
+    const data2 = await loadJsonIfExists('transmitters2.json');
+    const data3 = await loadJsonIfExists('transmitters3.json');
+    const data4 = await loadJsonIfExists('transmitters4.json');
+
+    // Объединяем все базы
+    raw = [...data1, ...data2, ...data3, ...data4];
   } catch(e) {
     console.error('Failed to load transmitters.json:', e);
     const loading = $('loading');
     if (loading) {
-      loading.innerHTML = '<div style="color:#fb7185;font-size:14px;text-align:center;padding:20px">⚠ Не удалось загрузить transmitters.json<br><small style="color:#475569">Убедитесь что файл transmitters.json находится рядом с index.html</small></div>';
+      loading.innerHTML = '<div style="color:#fb7185;font-size:14px;text-align:center;padding:20px">⚠ Не удалось загрузить transmitters.json<br><small style="color:#475569">Убедитесь что transmitters.json (и, если нужны, transmitters2/3/4.json) находятся рядом с index.html</small></div>';
     }
     return;
   }
@@ -4548,7 +4823,7 @@ async function init() {
   raw.forEach((item, i) => { item.id = i; });
   state.data = raw;
 
-  renderList();
+  renderСписок();
   updateStats();
 
   // Hide loading
@@ -4610,7 +4885,7 @@ function initExtras() {
       state.epoch = chip.dataset.epoch;
       document.querySelectorAll('.epoch-chip').forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
-      renderList();
+      renderСписок();
     });
   });
 
@@ -4620,7 +4895,7 @@ function initExtras() {
       state.sect = chip.dataset.sect;
       document.querySelectorAll('.sect-chip').forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
-      renderList();
+      renderСписок();
     });
   });
 
@@ -4652,19 +4927,19 @@ function initExtras() {
   $('statsClose').addEventListener('click', () => closePanel('statsPanel'));
   $('statsPanel').addEventListener('click', e => { if (e.target === $('statsPanel')) closePanel('statsPanel'); });
 
-  // ── Compare panel ────────────────────────────────────────────
-  $('btnCompare').addEventListener('click', openCompare);
+  // ── Сравнение panel ────────────────────────────────────────────
+  $('btnСравнение').addEventListener('click', openСравнение);
   $('compareClose').addEventListener('click', () => closePanel('comparePanel'));
   $('comparePanel').addEventListener('click', e => { if (e.target === $('comparePanel')) closePanel('comparePanel'); });
-  $('cmpGo').addEventListener('click', doCompare);
+  $('cmpGo').addEventListener('click', doСравнение);
 
-  // ── Timeline panel ───────────────────────────────────────────
-  $('btnTimeline').addEventListener('click', openTimeline);
+  // ── Хронология panel ───────────────────────────────────────────
+  $('btnХронология').addEventListener('click', openХронология);
   $('timelineClose').addEventListener('click', () => closePanel('timelinePanel'));
   $('timelinePanel').addEventListener('click', e => { if (e.target === $('timelinePanel')) closePanel('timelinePanel'); });
 
-  // ── Glossary panel ───────────────────────────────────────────
-  $('btnGlossary').addEventListener('click', openGlossary);
+  // ── Глоссарий panel ───────────────────────────────────────────
+  $('btnГлоссарий').addEventListener('click', openГлоссарий);
   $('glossaryClose').addEventListener('click', () => closePanel('glossaryPanel'));
   $('glossaryPanel').addEventListener('click', e => { if (e.target === $('glossaryPanel')) closePanel('glossaryPanel'); });
 
@@ -4742,7 +5017,7 @@ function openStats() {
 }
 
 // ── COMPARE ───────────────────────────────────────────────────────
-function openCompare() {
+function openСравнение() {
   const opts = state.data.map(tx => `<option value="${tx.id}">${tx.name}</option>`).join('');
   $('cmpA').innerHTML = '<option value="">— Первый —</option>' + opts;
   $('cmpB').innerHTML = '<option value="">— Второй —</option>' + opts;
@@ -4750,7 +5025,7 @@ function openCompare() {
   openPanelEl('comparePanel');
 }
 
-function doCompare() {
+function doСравнение() {
   const idA = parseInt($('cmpA').value);
   const idB = parseInt($('cmpB').value);
   if (isNaN(idA) || isNaN(idB) || idA === idB) {
@@ -4799,7 +5074,7 @@ function doCompare() {
 }
 
 // ── TIMELINE ──────────────────────────────────────────────────────
-function openTimeline() {
+function openХронология() {
   const centuries = {
     'Сахабы (I до I в.х.)': tx => /(сахаб|сподвижник пророка)/i.test(tx.bio||''),
     'Табиины (I–II в.х.)': tx => /табиин|табии[^н]/i.test((tx.bio||'')+(tx.name||'')),
@@ -4843,7 +5118,7 @@ function openTimeline() {
 }
 
 // ── GLOSSARY ──────────────────────────────────────────────────────
-function openGlossary() {
+function openГлоссарий() {
   const terms = [
     { term: 'Тика (Сика)', arabic: 'ثقة', type: 'trust', def: 'Надёжный передатчик. Высшая положительная оценка в обеих традициях. Означает, что передатчик обладал точной памятью (дабт) и был честен (адала).' },
     { term: 'Джалиль', arabic: 'جليل', type: 'trust', def: 'Великий, выдающийся. Дополнительная характеристика к «тика», указывающая на особый научный авторитет передатчика.' },
@@ -4865,7 +5140,7 @@ function openGlossary() {
     { term: 'Мурсаль', arabic: 'المرسل', type: 'disputed', def: 'Хадис с разрывом в цепи — пропущен один или несколько передатчиков между сподвижником и Пророком. В шиитском риджале некоторые мурсали Ibn Abi Umayr принимаются.' },
   ];
 
-  $('glossaryList').innerHTML = terms.map(t => `
+  $('glossaryСписок').innerHTML = terms.map(t => `
     <div class="gloss-item ${t.type === 'weak' ? 'gloss-weak' : t.type === 'disputed' ? 'gloss-disputed' : ''}">
       <div class="gloss-term">${t.term}</div>
       <div class="gloss-arabic">${t.arabic}</div>
@@ -4923,10 +5198,10 @@ function openReliability() {
     .map(tx => ({ tx, score: calcScore(tx) }))
     .sort((a, b) => b.score - a.score);
 
-  const topAll = ranked.slice(0, 30);
+  const topВсе = ranked.slice(0, 30);
   let html = `<div style="font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px">Топ-30 передатчиков по индексу надёжности</div>`;
 
-  topAll.forEach(({ tx, score }, i) => {
+  topВсе.forEach(({ tx, score }, i) => {
     const col = scoreColor(score);
     html += `<div class="rel-item">
       <span class="rel-rank">${i + 1}</span>
@@ -5289,13 +5564,13 @@ const QUIZ_QUESTIONS = [
 
 let quizState = { q: 0, score: 0, answered: false, total: QUIZ_QUESTIONS.length };
 
-function openQuiz() {
+function openТест() {
   quizState = { q: 0, score: 0, answered: false, total: QUIZ_QUESTIONS.length };
-  renderQuizQuestion();
+  renderТестQuestion();
   openPanelEl('quizPanel');
 }
 
-function renderQuizQuestion() {
+function renderТестQuestion() {
   const { q, score, total } = quizState;
   const qEl = $('quizContent');
 
@@ -5307,7 +5582,7 @@ function renderQuizQuestion() {
       <div class="quiz-score-num">${score}/${total}</div>
       <div class="quiz-score-label">${pct}% правильных ответов</div>
       <div class="quiz-score-message">${msg}</div>
-      <button class="cmp-btn" style="margin-top:20px" onclick="openQuiz()">🔄 Начать заново</button>
+      <button class="cmp-btn" style="margin-top:20px" onclick="openТест()">🔄 Начать заново</button>
     </div>`;
     return;
   }
@@ -5356,7 +5631,7 @@ function renderQuizQuestion() {
       nextBtn.style.display = 'block';
       nextBtn.addEventListener('click', () => {
         quizState.q++;
-        renderQuizQuestion();
+        renderТестQuestion();
       });
     });
   });
@@ -5375,8 +5650,8 @@ function initNewPanelEvents() {
   $('reliabilityClose').addEventListener('click', () => closePanel('reliabilityPanel'));
   $('reliabilityPanel').addEventListener('click', e => { if (e.target === $('reliabilityPanel')) closePanel('reliabilityPanel'); });
 
-  // Quiz
-  $('btnQuiz').addEventListener('click', openQuiz);
+  // Тест
+  $('btnТест').addEventListener('click', openТест);
   $('quizClose').addEventListener('click', () => closePanel('quizPanel'));
   $('quizPanel').addEventListener('click', e => { if (e.target === $('quizPanel')) closePanel('quizPanel'); });
 
@@ -5385,17 +5660,17 @@ function initNewPanelEvents() {
   $('hilaliClose').addEventListener('click', () => closePanel('hilaliPanel'));
   $('hilaliPanel').addEventListener('click', e => { if (e.target === $('hilaliPanel')) closePanel('hilaliPanel'); });
 
-  // Notes panel
-  $('btnNotes').addEventListener('click', openNotes);
+  // Заметки panel
+  $('btnЗаметки').addEventListener('click', openЗаметки);
   $('notesClose').addEventListener('click', () => closePanel('notesPanel'));
   $('notesPanel').addEventListener('click', e => { if (e.target === $('notesPanel')) closePanel('notesPanel'); });
   $('notesSave').addEventListener('click', saveNote);
   $('notesClear').addEventListener('click', () => { $('notesTextarea').value = ''; });
 
-  // Notes button in detail view
+  // Заметки button in detail view
   $('btnNoteDetail').addEventListener('click', () => {
     if (state.activeId === null) return;
-    openNotes(state.activeId);
+    openЗаметки(state.activeId);
   });
 
   // Sort panel
@@ -5407,7 +5682,7 @@ function initNewPanelEvents() {
       state.sortMode = btn.dataset.sort;
       document.querySelectorAll('.sort-opt').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      renderList();
+      renderСписок();
       closePanel('sortPanel');
       toast('↕ Сортировка применена');
     });
@@ -5445,7 +5720,7 @@ function initNewPanelEvents() {
 // ═══════════════════════════════════════
 // NOTES SYSTEM
 // ═══════════════════════════════════════
-function openNotes(txId) {
+function openЗаметки(txId) {
   const isDetail = typeof txId === 'number';
   const key = isDetail ? `tx_${txId}` : 'global';
   const tx = isDetail ? state.data[txId] : null;
@@ -5456,13 +5731,13 @@ function openNotes(txId) {
   $('notesTextarea').value = (notesStore[key] && notesStore[key].text) || '';
 
   // Render saved notes list
-  const notesList = $('notesList');
-  const allNotes = Object.entries(notesStore).filter(([k, v]) => v.text && v.text.trim());
-  if (allNotes.length === 0) {
-    notesList.innerHTML = '<p style="font-size:13px;color:var(--text-3)">Заметок пока нет</p>';
+  const notesСписок = $('notesСписок');
+  const allЗаметки = Object.entries(notesStore).filter(([k, v]) => v.text && v.text.trim());
+  if (allЗаметки.length === 0) {
+    notesСписок.innerHTML = '<p style="font-size:13px;color:var(--text-3)">Заметок пока нет</p>';
   } else {
-    notesList.innerHTML = '<div style="font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">Сохранённые заметки</div>' +
-      allNotes.map(([k, v]) => {
+    notesСписок.innerHTML = '<div style="font-size:11px;color:var(--text-3);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px">Сохранённые заметки</div>' +
+      allЗаметки.map(([k, v]) => {
         const label = k === 'global' ? '🌐 Общие' : `📌 ${v.title || k}`;
         return `<div class="note-card">
           <div class="note-card-title">${label}</div>
@@ -5471,17 +5746,17 @@ function openNotes(txId) {
           <button class="note-card-del" data-key="${k}" title="Удалить">✕</button>
         </div>`;
       }).join('');
-    notesList.querySelectorAll('.note-card-del').forEach(btn => {
+    notesСписок.querySelectorAll('.note-card-del').forEach(btn => {
       btn.addEventListener('click', () => {
         delete notesStore[btn.dataset.key];
-        saveNotesStore();
-        openNotes(isDetail ? txId : undefined);
+        saveЗаметкиStore();
+        openЗаметки(isDetail ? txId : undefined);
         toast('🗑 Заметка удалена');
       });
     });
     // Click on card to load
-    notesList.querySelectorAll('.note-card').forEach((card, i) => {
-      const [k] = allNotes[i];
+    notesСписок.querySelectorAll('.note-card').forEach((card, i) => {
+      const [k] = allЗаметки[i];
       card.style.cursor = 'pointer';
       card.addEventListener('click', (e) => {
         if (e.target.classList.contains('note-card-del')) return;
@@ -5506,9 +5781,9 @@ function saveNote() {
     title: tx ? tx.name : 'Общие заметки',
     date: new Date().toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })
   };
-  saveNotesStore();
+  saveЗаметкиStore();
   toast('💾 Заметка сохранена');
-  openNotes(state.activeId !== null ? state.activeId : undefined);
+  openЗаметки(state.activeId !== null ? state.activeId : undefined);
 }
 
 // ═══════════════════════════════════════
@@ -5522,25 +5797,25 @@ function openSort() {
 // GEOGRAPHY
 // ═══════════════════════════════════════
 let geoData = null;
-let geoLoading = false;
+let geoЗагрузка = false;
 
 async function loadGeoData() {
-  if (geoData || geoLoading) return geoData;
-  geoLoading = true;
+  if (geoData || geoЗагрузка) return geoData;
+  geoЗагрузка = true;
   try {
     const res = await fetch('geography.json');
     if (res.ok) geoData = await res.json();
   } catch(e) {
     console.warn('geography.json not found:', e);
   }
-  geoLoading = false;
+  geoЗагрузка = false;
   return geoData;
 }
 
 async function openGeography() {
   openPanelEl('geographyPanel');
   const mapEl = $('geographyMap');
-  const listEl = $('geographyCityList');
+  const listEl = $('geographyCityСписок');
 
   mapEl.innerHTML = '<div class="ar-loading" style="margin:20px auto;display:flex;justify-content:center">Загрузка данных...</div>';
   listEl.innerHTML = '';
@@ -5552,7 +5827,7 @@ async function openGeography() {
   }
 
   renderGeoMap(data);
-  renderGeoCityList(data);
+  renderGeoCityСписок(data);
 }
 
 function renderGeoMap(data) {
@@ -5599,17 +5874,17 @@ function renderGeoMap(data) {
     pin.addEventListener('click', () => {
       const key = pin.dataset.city;
       mapEl.querySelectorAll('.geo-pin').forEach(p => p.classList.toggle('active', p === pin));
-      const card = $('geographyCityList').querySelector(`[data-city-card="${key}"]`);
+      const card = $('geographyCityСписок').querySelector(`[data-city-card="${key}"]`);
       if (card) {
-        $('geographyCityList').querySelectorAll('.geo-city-card').forEach(c => c.classList.toggle('active', c === card));
+        $('geographyCityСписок').querySelectorAll('.geo-city-card').forEach(c => c.classList.toggle('active', c === card));
         card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     });
   });
 }
 
-function renderGeoCityList(data) {
-  const listEl = $('geographyCityList');
+function renderGeoCityСписок(data) {
+  const listEl = $('geographyCityСписок');
   const cities = Object.entries(data.cities).sort((a,b) => b[1].count - a[1].count);
 
   listEl.innerHTML = cities.map(([key, city]) => `
@@ -5655,21 +5930,21 @@ function renderGeoCityList(data) {
 }
 
 // ═══════════════════════════════════════
-// GENEALOGY TREE
+// GРУEALOGY TREE
 // ═══════════════════════════════════════
 let genData = null;
-let genLoading = false;
+let genЗагрузка = false;
 
 async function loadGenData() {
-  if (genData || genLoading) return genData;
-  genLoading = true;
+  if (genData || genЗагрузка) return genData;
+  genЗагрузка = true;
   try {
     const res = await fetch('genealogy.json');
     if (res.ok) genData = await res.json();
   } catch(e) {
     console.warn('genealogy.json not found:', e);
   }
-  genLoading = false;
+  genЗагрузка = false;
   return genData;
 }
 
@@ -5744,6 +6019,9 @@ const ASSETS = [
   './',
   './index.html',
   './transmitters.json',
+  './transmitters2.json',
+  './transmitters3.json',
+  './transmitters4.json',
   './manifest.json'
 ];
 
@@ -5838,6 +6116,95 @@ function fallbackCopy(text) {
     if (e.key === 'Escape') closeDonateModal();
   }, { once: true });
 })();
+
+
+// ═══════════════════════════════════════
+// EXTRA ANIMATIONS + RUSSIAN-ONLY ENFORCEMENT
+// ═══════════════════════════════════════
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    // Force Russian UI visually and in storage
+    state.lang = 'ru';
+    try { localStorage.setItem('rijal_lang', 'ru'); } catch(e) {}
+
+    // Subtle pointer-driven glow
+    const setPointer = (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      document.body.style.setProperty('--mx', x + '%');
+      document.body.style.setProperty('--my', y + '%');
+    };
+    window.addEventListener('pointermove', setPointer, { passive: true });
+
+    // Floating particles
+    let fx = document.getElementById('fxLayer');
+    if (!fx) {
+      fx = document.createElement('div');
+      fx.id = 'fxLayer';
+      document.body.appendChild(fx);
+    }
+    fx.innerHTML = '';
+    const count = window.innerWidth < 768 ? 10 : 22;
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('span');
+      p.className = 'fx-particle';
+      const size = 2 + Math.random() * 6;
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+      p.style.left = (Math.random() * 100) + 'vw';
+      p.style.top = (Math.random() * 100) + 'vh';
+      p.style.animationDuration = (10 + Math.random() * 14) + 's';
+      p.style.animationDelay = (-Math.random() * 14) + 's';
+      p.style.setProperty('--drift', ((Math.random() * 2 - 1) * 120) + 'px');
+      p.style.opacity = (0.15 + Math.random() * 0.45).toFixed(2);
+      fx.appendChild(p);
+    }
+
+    // Animate main sections sequentially
+    const animateSeq = [
+      '.sidebar-top', '.stats-bar', '.transmitter-list', '.detail', '.welcome', '.panel-box'
+    ];
+    animateSeq.forEach((sel, idx) => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.style.animationDelay = (idx * 0.05) + 's';
+      });
+    });
+
+    // Slight parallax on header
+    const header = document.querySelector('.app-header');
+    if (header) {
+      window.addEventListener('pointermove', (e) => {
+        const dx = ((e.clientX / window.innerWidth) - 0.5) * 8;
+        header.style.transform = `translate3d(${dx * 0.08}px,0,0)`;
+      }, { passive: true });
+    }
+
+    // Stagger items after render
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll('.tx-item').forEach((el, i) => {
+        el.style.animationDelay = (i * 0.008) + 's';
+      });
+      document.querySelectorAll('.card').forEach((el, i) => {
+        el.style.animationDelay = (i * 0.03) + 's';
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Small pulse on active transmitter / active chips
+    setInterval(() => {
+      const active = document.querySelector('.tx-item.active, .filter-chip.active, .action-btn.active');
+      if (active) {
+        active.animate([
+          { transform: 'translateY(0) scale(1)' },
+          { transform: 'translateY(-1px) scale(1.01)' },
+          { transform: 'translateY(0) scale(1)' }
+        ], { duration: 800, easing: 'ease-in-out' });
+      }
+    }, 6000);
+  } catch (e) {
+    console.warn('Animation init failed', e);
+  }
+});
 
 </script>
 </body>
