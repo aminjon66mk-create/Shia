@@ -2673,6 +2673,129 @@ select:focus {
   100% { opacity: 0; transform: translateY(-110vh) translateX(var(--drift, 0px)) scale(1.2); }
 }
 
+
+/* ═══════════════════════════════════════
+   PERFORMANCE + INTRO + DONATE BUTTON
+═══════════════════════════════════════ */
+.btn-donate {
+  color: #fda4af;
+  background: rgba(225,29,72,.08);
+  border: 1px solid rgba(225,29,72,.22);
+}
+.btn-donate:hover {
+  background: rgba(225,29,72,.18);
+  color: #fecdd3;
+}
+.btn-donate svg { stroke: currentColor; }
+
+.donate-overlay { display: none; }
+.donate-overlay.open { display: flex; }
+.donate-overlay.hiding { display: flex; }
+
+.loading-overlay { display: none; }
+.loading-overlay.open { display: flex; }
+
+.loading-card {
+  width: min(420px, calc(100vw - 32px));
+  padding: 26px 24px 22px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, rgba(15,23,36,.96), rgba(10,16,26,.98));
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 28px 90px rgba(0,0,0,.55);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+.loading-title {
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--text);
+}
+.loading-subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+.loading-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 18px 0 14px;
+}
+.loading-skeleton span {
+  display: block;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(94,234,212,.12), rgba(94,234,212,.38), rgba(94,234,212,.12));
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+.loading-skeleton span:nth-child(2) { width: 86%; margin: 0 auto; }
+.loading-skeleton span:nth-child(3) { width: 68%; margin: 0 auto; }
+.loading-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,.06);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.loading-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 35%;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  animation: progressSweep 1.2s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% 0%; opacity: .65; }
+  50% { background-position: 100% 0%; opacity: 1; }
+  100% { background-position: 0% 0%; opacity: .65; }
+}
+@keyframes progressSweep {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(320%); }
+}
+.tx-item {
+  animation: itemIn .22s ease both;
+  will-change: transform, opacity;
+}
+@keyframes itemIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.tx-item.active {
+  box-shadow: 0 0 0 1px rgba(13,148,136,.2), 0 10px 30px rgba(13,148,136,.08);
+  animation: activeGlow 2.4s ease-in-out infinite;
+}
+@keyframes activeGlow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-1px); }
+}
+.app-intro .app-header,
+.app-intro .action-bar-wrap,
+.app-intro .sidebar,
+.app-intro .content {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.app-intro .app-header { animation: introDrop .55s ease forwards .05s; }
+.app-intro .action-bar-wrap { animation: introDrop .55s ease forwards .12s; }
+.app-intro .sidebar { animation: introSide .7s cubic-bezier(.22,1,.36,1) forwards .14s; }
+.app-intro .content { animation: introMain .7s cubic-bezier(.22,1,.36,1) forwards .18s; }
+@keyframes introDrop {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes introSide {
+  from { opacity: 0; transform: translateX(-16px) scale(.985); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+@keyframes introMain {
+  from { opacity: 0; transform: translateY(16px) scale(.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
 </style>
 
 <style id="academic-archive-theme">
@@ -2794,14 +2917,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script>
 
 </head>
-<body>
+<body class="app-intro">
+
 
 <!-- DONATION MODAL -->
-<div class="donate-overlay" id="donateOverlay" role="dialog" aria-modal="true" aria-label="Поддержать проект">
-  <div class="donate-box" id="donateBox">
+<div class="donate-overlay" id="donateOverlay" role="dialog" aria-modal="true" aria-label="Поддержать проект" style="display:none">
+  <div class="donate-box" id="donateBox" tabindex="-1">
     <div class="donate-accent"></div>
     <div class="donate-inner">
-
       <div class="donate-head">
         <div class="donate-title">📚 Поддержать <span>ShiaIsnad</span></div>
         <button class="donate-close-btn" id="donateDismissTop" aria-label="Закрыть">✕</button>
@@ -2814,7 +2937,6 @@ document.addEventListener("DOMContentLoaded",()=>{
       </div>
 
       <div class="donate-wallets">
-
         <div class="wallet-row" onclick="copyWallet(this, 'UQAyLRTWh4BXSYpH0SvIvTHlW-aFazWNckhRALaQx6thPoau')">
           <div class="wallet-label"><span class="wallet-gem">💎</span> TON</div>
           <div class="wallet-addr">UQAyLRTWh4BXSYpH0SvIvTHlW-aFazWNckhRALaQx6thPoau</div>
@@ -2832,7 +2954,6 @@ document.addEventListener("DOMContentLoaded",()=>{
           <div class="wallet-addr">0xd15758F5B14798EE37cDE73992A550118c593F62</div>
           <span class="wallet-copy">Копировать</span>
         </div>
-
       </div>
 
       <div class="card-row">
@@ -2844,9 +2965,8 @@ document.addEventListener("DOMContentLoaded",()=>{
 
       <div class="donate-footer">
         <em>Да вознаградит Аллах всех, кто помогает развитию проекта и распространению полезных знаний.</em>
-        <button class="donate-dismiss" id="donateDismissBottom">Закрыть и перейти к базе данных →</button>
+        <button class="donate-dismiss" id="donateDismissBottom">Закрыть</button>
       </div>
-
     </div>
   </div>
 </div>
@@ -2854,11 +2974,19 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 <!-- Загрузка -->
 <div class="loading-overlay" id="loading">
-  <div class="loading-emblem">ر</div>
-  <div class="loading-bar"></div>
+  <div class="loading-card">
+    <div class="loading-emblem">ر</div>
+    <div class="loading-title">Загружаю базу риджаля</div>
+    <div class="loading-subtitle">Подготавливаю список передатчиков и интерфейс</div>
+    <div class="loading-skeleton" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="loading-bar"></div>
+  </div>
 </div>
 
 <!-- Header -->
+
 <header class="app-header">
   <button class="btn-menu" id="btnMenu" aria-label="Меню">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -2879,6 +3007,11 @@ document.addEventListener("DOMContentLoaded",()=>{
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="9" y2="18"/>
         <polyline points="17 15 21 19 17 23" transform="translate(0,-3)"/>
+      </svg>
+    </button>
+    <button class="btn-icon btn-donate" id="btnDonate" title="Поддержать проект" aria-label="Поддержать проект">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.8 4.6c-1.5-1.6-4-1.7-5.7-.2L12 7.3 8.9 4.4c-1.7-1.5-4.2-1.4-5.7.2-1.7 1.8-1.6 4.6.1 6.3L12 19l8.7-8.1c1.7-1.7 1.8-4.5.1-6.3z"/>
       </svg>
     </button>
     <button class="btn-icon" id="btnTheme" title="Переключить тему">
@@ -4031,7 +4164,7 @@ function renderСписок() {
   }
 
   const frag = document.createDocumentFragment();
-  state.filtered.forEach(tx => {
+  state.filtered.forEach((tx, idx) => {
     const li = document.createElement('li');
     li.className = 'tx-item' + (tx.id === state.activeId ? ' active' : '');
     li.setAttribute('role', 'option');
@@ -4078,6 +4211,7 @@ function renderСписок() {
       ${isFav ? '<span class="tx-fav">★</span>' : ''}
     `;
 
+    li.style.animationDelay = (idx * 0.01) + 's';
     li.addEventListener('click', () => {
       selectTransmitter(tx.id);
       // On mobile, close drawer & show content
@@ -4789,6 +4923,8 @@ function initEvents() {
 async function init() {
   loadНастройки();
   applyLang();
+  const loadingEl = $('loading');
+  if (loadingEl) loadingEl.style.display = 'flex';
 
   // Load data from transmitters.json + transmitters2/3/4.json (если есть)
   let raw = [];
@@ -4804,18 +4940,20 @@ async function init() {
       }
     };
 
-    const data1 = await loadJsonIfExists('transmitters.json');
-    const data2 = await loadJsonIfExists('transmitters2.json');
-    const data3 = await loadJsonIfExists('transmitters3.json');
-    const data4 = await loadJsonIfExists('transmitters4.json');
+    const [data1, data2, data3, data4] = await Promise.all([
+      loadJsonIfExists('transmitters.json'),
+      loadJsonIfExists('transmitters2.json'),
+      loadJsonIfExists('transmitters3.json'),
+      loadJsonIfExists('transmitters4.json')
+    ]);
 
     // Объединяем все базы
     raw = [...data1, ...data2, ...data3, ...data4];
   } catch(e) {
     console.error('Failed to load transmitters.json:', e);
-    const loading = $('loading');
-    if (loading) {
-      loading.innerHTML = '<div style="color:#fb7185;font-size:14px;text-align:center;padding:20px">⚠ Не удалось загрузить transmitters.json<br><small style="color:#475569">Убедитесь что transmitters.json (и, если нужны, transmitters2/3/4.json) находятся рядом с index.html</small></div>';
+    const loadingErrorEl = $('loading');
+    if (loadingErrorEl) {
+      loadingErrorEl.innerHTML = '<div style="color:#fb7185;font-size:14px;text-align:center;padding:20px">⚠ Не удалось загрузить transmitters.json<br><small style="color:#475569">Убедитесь что transmitters.json (и, если нужны, transmitters2/3/4.json) находятся рядом с index.html</small></div>';
     }
     return;
   }
@@ -4827,9 +4965,14 @@ async function init() {
   updateStats();
 
   // Hide loading
-  const loading = $('loading');
-  loading.classList.add('hidden');
-  setTimeout(() => loading.style.display = 'none', 450);
+  const loadingHideEl = $('loading');
+  if (loadingHideEl) {
+    loadingHideEl.classList.add('hidden');
+    setTimeout(() => {
+      loadingHideEl.style.display = 'none';
+      document.body.classList.remove('app-intro');
+    }, 280);
+  }
 
   // Restore last selection
   try {
@@ -6064,15 +6207,29 @@ document.addEventListener('DOMContentLoaded', () => {
 // ═══════════════════════════════════════
 // DONATION MODAL
 // ═══════════════════════════════════════
+
+function openDonateModal() {
+  const ov = document.getElementById('donateOverlay');
+  if (!ov) return;
+  ov.style.display = 'flex';
+  ov.classList.remove('hiding');
+  ov.classList.add('open');
+  requestAnimationFrame(() => {
+    const box = document.getElementById('donateBox');
+    if (box) box.focus();
+  });
+}
+
 function closeDonateModal() {
   const ov = document.getElementById('donateOverlay');
   if (!ov) return;
+  ov.classList.remove('open');
   ov.classList.add('hiding');
-  setTimeout(() => { ov.style.display = 'none'; }, 280);
-  try { localStorage.setItem('shia_donate_seen', '1'); } catch(e) {}
+  setTimeout(() => { ov.style.display = 'none'; ov.classList.remove('hiding'); }, 260);
 }
 
 function copyWallet(rowEl, addr) {
+
   const cleanAddr = addr.replace(/\s/g, '');
   if (navigator.clipboard) {
     navigator.clipboard.writeText(cleanAddr).catch(() => fallbackCopy(cleanAddr));
@@ -6096,26 +6253,27 @@ function fallbackCopy(text) {
   ta.remove();
 }
 
+
 (function initDonateModal() {
-  try { if (localStorage.getItem('shia_donate_seen') === '1') {
-    const ov = document.getElementById('donateOverlay');
-    if (ov) ov.style.display = 'none'; return;
-  }} catch(e) {}
+  const openBtn = document.getElementById('btnDonate');
+  if (openBtn) openBtn.addEventListener('click', openDonateModal);
+
   const closeIds = ['donateDismissTop', 'donateDismissBottom'];
   closeIds.forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('click', closeDonateModal);
   });
-  // Close on overlay click (outside box)
+
   const ov = document.getElementById('donateOverlay');
   if (ov) ov.addEventListener('click', function(e) {
     if (e.target === ov) closeDonateModal();
   });
-  // Close on Escape
+
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeDonateModal();
-  }, { once: true });
+  });
 })();
+
 
 
 // ═══════════════════════════════════════
@@ -6170,37 +6328,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Slight parallax on header
+    // Slight parallax on header, throttled for smoother scrolling
     const header = document.querySelector('.app-header');
-    if (header) {
+    if (header && window.matchMedia('(pointer:fine)').matches) {
+      let raf = 0;
+      let latestX = 0;
       window.addEventListener('pointermove', (e) => {
-        const dx = ((e.clientX / window.innerWidth) - 0.5) * 8;
-        header.style.transform = `translate3d(${dx * 0.08}px,0,0)`;
+        latestX = e.clientX;
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          const dx = ((latestX / window.innerWidth) - 0.5) * 8;
+          header.style.transform = `translate3d(${dx * 0.08}px,0,0)`;
+          raf = 0;
+        });
       }, { passive: true });
     }
-
-    // Stagger items after render
-    const observer = new MutationObserver(() => {
-      document.querySelectorAll('.tx-item').forEach((el, i) => {
-        el.style.animationDelay = (i * 0.008) + 's';
-      });
-      document.querySelectorAll('.card').forEach((el, i) => {
-        el.style.animationDelay = (i * 0.03) + 's';
-      });
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    // Small pulse on active transmitter / active chips
-    setInterval(() => {
-      const active = document.querySelector('.tx-item.active, .filter-chip.active, .action-btn.active');
-      if (active) {
-        active.animate([
-          { transform: 'translateY(0) scale(1)' },
-          { transform: 'translateY(-1px) scale(1.01)' },
-          { transform: 'translateY(0) scale(1)' }
-        ], { duration: 800, easing: 'ease-in-out' });
-      }
-    }, 6000);
   } catch (e) {
     console.warn('Animation init failed', e);
   }
